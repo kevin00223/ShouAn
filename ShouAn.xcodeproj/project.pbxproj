@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		7A45327B15EFE9B2163087BF /* libPods-ShouAn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3639F09083C942D12A8D87 /* libPods-ShouAn.a */; };
 		A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */; };
-		A2AE4F9022AF755D001DBEAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4F8F22AF755D001DBEAA /* ViewController.m */; };
-		A2AE4F9322AF755D001DBEAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9122AF755D001DBEAA /* Main.storyboard */; };
 		A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9422AF755D001DBEAA /* Assets.xcassets */; };
 		A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9622AF755D001DBEAA /* LaunchScreen.storyboard */; };
 		A2AE4F9B22AF755D001DBEAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4F9A22AF755D001DBEAA /* main.m */; };
+		A2AE4FAD22AF824B001DBEAA /* SANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FAC22AF824B001DBEAA /* SANavigationController.m */; };
+		A2AE4FB022AF8277001DBEAA /* SATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FAF22AF8277001DBEAA /* SATabBarController.m */; };
+		A2AE4FB322AF828C001DBEAA /* SABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FB222AF828C001DBEAA /* SABaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +22,18 @@
 		A2AE4F8822AF755D001DBEAA /* ShouAn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShouAn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AE4F8B22AF755D001DBEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A2AE4F8E22AF755D001DBEAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A2AE4F8F22AF755D001DBEAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A2AE4F9222AF755D001DBEAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2AE4F9422AF755D001DBEAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2AE4F9722AF755D001DBEAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2AE4F9922AF755D001DBEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2AE4F9A22AF755D001DBEAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A2AE4FA822AF7A8A001DBEAA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A2AE4FA922AF7C03001DBEAA /* SAConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAConst.h; sourceTree = "<group>"; };
+		A2AE4FAB22AF824B001DBEAA /* SANavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SANavigationController.h; sourceTree = "<group>"; };
+		A2AE4FAC22AF824B001DBEAA /* SANavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SANavigationController.m; sourceTree = "<group>"; };
+		A2AE4FAE22AF8277001DBEAA /* SATabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SATabBarController.h; sourceTree = "<group>"; };
+		A2AE4FAF22AF8277001DBEAA /* SATabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SATabBarController.m; sourceTree = "<group>"; };
+		A2AE4FB122AF828B001DBEAA /* SABaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SABaseViewController.h; sourceTree = "<group>"; };
+		A2AE4FB222AF828C001DBEAA /* SABaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SABaseViewController.m; sourceTree = "<group>"; };
 		DE3639F09083C942D12A8D87 /* libPods-ShouAn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShouAn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E993A96181A20CD49670007B /* Pods-ShouAn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShouAn.debug.xcconfig"; path = "Target Support Files/Pods-ShouAn/Pods-ShouAn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,7 +64,6 @@
 				E993A96181A20CD49670007B /* Pods-ShouAn.debug.xcconfig */,
 				3C36135E39BBBDB76EB28B27 /* Pods-ShouAn.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,17 +88,86 @@
 		A2AE4F8A22AF755D001DBEAA /* ShouAn */ = {
 			isa = PBXGroup;
 			children = (
-				A2AE4F8B22AF755D001DBEAA /* AppDelegate.h */,
-				A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */,
-				A2AE4F8E22AF755D001DBEAA /* ViewController.h */,
-				A2AE4F8F22AF755D001DBEAA /* ViewController.m */,
-				A2AE4F9122AF755D001DBEAA /* Main.storyboard */,
+				A2AE4FA722AF7A74001DBEAA /* Other */,
+				A2AE4FA322AF764C001DBEAA /* Service */,
+				A2AE4FA222AF7646001DBEAA /* Base */,
+				A2AE4FA122AF7639001DBEAA /* Modules */,
 				A2AE4F9422AF755D001DBEAA /* Assets.xcassets */,
 				A2AE4F9622AF755D001DBEAA /* LaunchScreen.storyboard */,
 				A2AE4F9922AF755D001DBEAA /* Info.plist */,
 				A2AE4F9A22AF755D001DBEAA /* main.m */,
 			);
 			path = ShouAn;
+			sourceTree = "<group>";
+		};
+		A2AE4FA122AF7639001DBEAA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A2AE4FA222AF7646001DBEAA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A2AE4FAA22AF8212001DBEAA /* Share */,
+				A2AE4FA622AF76DB001DBEAA /* Const */,
+				A2AE4FA522AF76BE001DBEAA /* Catgory */,
+				A2AE4FA422AF7668001DBEAA /* Utilities */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A2AE4FA322AF764C001DBEAA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A2AE4F8B22AF755D001DBEAA /* AppDelegate.h */,
+				A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A2AE4FA422AF7668001DBEAA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A2AE4FA522AF76BE001DBEAA /* Catgory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Catgory;
+			sourceTree = "<group>";
+		};
+		A2AE4FA622AF76DB001DBEAA /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				A2AE4FA922AF7C03001DBEAA /* SAConst.h */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		A2AE4FA722AF7A74001DBEAA /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A2AE4FA822AF7A8A001DBEAA /* PrefixHeader.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		A2AE4FAA22AF8212001DBEAA /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				A2AE4FAB22AF824B001DBEAA /* SANavigationController.h */,
+				A2AE4FAC22AF824B001DBEAA /* SANavigationController.m */,
+				A2AE4FAE22AF8277001DBEAA /* SATabBarController.h */,
+				A2AE4FAF22AF8277001DBEAA /* SATabBarController.m */,
+				A2AE4FB122AF828B001DBEAA /* SABaseViewController.h */,
+				A2AE4FB222AF828C001DBEAA /* SABaseViewController.m */,
+			);
+			path = Share;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +197,7 @@
 		A2AE4F8022AF755D001DBEAA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SA;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = LK;
 				TargetAttributes = {
@@ -156,7 +231,6 @@
 			files = (
 				A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */,
 				A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */,
-				A2AE4F9322AF755D001DBEAA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,23 +266,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2AE4F9022AF755D001DBEAA /* ViewController.m in Sources */,
+				A2AE4FAD22AF824B001DBEAA /* SANavigationController.m in Sources */,
+				A2AE4FB322AF828C001DBEAA /* SABaseViewController.m in Sources */,
 				A2AE4F9B22AF755D001DBEAA /* main.m in Sources */,
 				A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */,
+				A2AE4FB022AF8277001DBEAA /* SATabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A2AE4F9122AF755D001DBEAA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A2AE4F9222AF755D001DBEAA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A2AE4F9622AF755D001DBEAA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -338,6 +406,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQ6UA9X9H9;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/likai/ShouAn/ShouAn/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = ShouAn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -355,6 +426,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQ6UA9X9H9;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/likai/ShouAn/ShouAn/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = ShouAn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

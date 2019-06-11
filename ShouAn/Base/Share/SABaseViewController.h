@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SABaseViewController.h
 //  ShouAn
 //
 //  Created by 李凯 on 2019/6/11.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface SABaseViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
