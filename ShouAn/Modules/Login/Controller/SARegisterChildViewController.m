@@ -7,6 +7,7 @@
 //
 
 #import "SARegisterChildViewController.h"
+#import "SAStudentInfoViewController.h"
 
 @interface SARegisterChildViewController ()
 
@@ -50,7 +51,7 @@
     [super viewDidLayoutSubviews];
     
     [self.studentNoContainerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.top.equalTo(self.view).offset(30);
+        make.left.top.equalTo(self.view).offset(20);
         make.right.equalTo(self.view).offset(-20);
         make.height.offset(45);
     }];
@@ -98,7 +99,20 @@
 #pragma mark - private method
 
 - (void)registerButtonClicked: (UIButton *)registerButton {
-    NSLog(@"registerButtonClicked");
+    SAStudentInfoViewController *studentInfoViewController = [[SAStudentInfoViewController alloc]init];
+    
+    [[self parentViewController].navigationController pushViewController:studentInfoViewController animated:YES];
+}
+
+// 获取父控制器
+- (UIViewController *)parentViewController {
+    for (UIView* next = [self.view superview]; next; next = next.superview) {
+        UIResponder *nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
+        }
+    }
+    return nil;
 }
 
 #pragma mark - lazy loading

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7A45327B15EFE9B2163087BF /* libPods-ShouAn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3639F09083C942D12A8D87 /* libPods-ShouAn.a */; };
+		A215EBB422AFE05A006AAB1C /* SAStudentInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */; };
+		A215EBB722AFE13B006AAB1C /* SAStudentInfoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB622AFE13B006AAB1C /* SAStudentInfoTableView.m */; };
+		A215EBBA22AFE520006AAB1C /* SAStudentInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB922AFE520006AAB1C /* SAStudentInfoCell.m */; };
 		A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */; };
 		A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9422AF755D001DBEAA /* Assets.xcassets */; };
 		A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9622AF755D001DBEAA /* LaunchScreen.storyboard */; };
@@ -26,6 +29,12 @@
 
 /* Begin PBXFileReference section */
 		3C36135E39BBBDB76EB28B27 /* Pods-ShouAn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShouAn.release.xcconfig"; path = "Target Support Files/Pods-ShouAn/Pods-ShouAn.release.xcconfig"; sourceTree = "<group>"; };
+		A215EBB222AFE05A006AAB1C /* SAStudentInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoViewController.h; sourceTree = "<group>"; };
+		A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAStudentInfoViewController.m; sourceTree = "<group>"; };
+		A215EBB522AFE13B006AAB1C /* SAStudentInfoTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoTableView.h; sourceTree = "<group>"; };
+		A215EBB622AFE13B006AAB1C /* SAStudentInfoTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAStudentInfoTableView.m; sourceTree = "<group>"; };
+		A215EBB822AFE520006AAB1C /* SAStudentInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoCell.h; sourceTree = "<group>"; };
+		A215EBB922AFE520006AAB1C /* SAStudentInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAStudentInfoCell.m; sourceTree = "<group>"; };
 		A2AE4F8822AF755D001DBEAA /* ShouAn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShouAn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AE4F8B22AF755D001DBEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -206,6 +215,8 @@
 				A2AE4FD122AFA32D001DBEAA /* SALoginChildViewController.m */,
 				A2AE4FD622AFA3AA001DBEAA /* SARegisterChildViewController.h */,
 				A2AE4FD722AFA3AA001DBEAA /* SARegisterChildViewController.m */,
+				A215EBB222AFE05A006AAB1C /* SAStudentInfoViewController.h */,
+				A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -217,6 +228,10 @@
 				A2AE4FC322AF9198001DBEAA /* SATabView.m */,
 				A2AE4FD922AFA457001DBEAA /* SAContentView.h */,
 				A2AE4FDA22AFA457001DBEAA /* SAContentView.m */,
+				A215EBB522AFE13B006AAB1C /* SAStudentInfoTableView.h */,
+				A215EBB622AFE13B006AAB1C /* SAStudentInfoTableView.m */,
+				A215EBB822AFE520006AAB1C /* SAStudentInfoCell.h */,
+				A215EBB922AFE520006AAB1C /* SAStudentInfoCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -328,10 +343,13 @@
 			files = (
 				A2AE4FBC22AF8EF9001DBEAA /* SALoginViewController.m in Sources */,
 				A2AE4FAD22AF824B001DBEAA /* SANavigationController.m in Sources */,
+				A215EBBA22AFE520006AAB1C /* SAStudentInfoCell.m in Sources */,
 				A2AE4FD822AFA3AA001DBEAA /* SARegisterChildViewController.m in Sources */,
 				A2AE4FB322AF828C001DBEAA /* SABaseViewController.m in Sources */,
 				A2AE4FDB22AFA457001DBEAA /* SAContentView.m in Sources */,
 				A2AE4FBF22AF914E001DBEAA /* SAView.m in Sources */,
+				A215EBB422AFE05A006AAB1C /* SAStudentInfoViewController.m in Sources */,
+				A215EBB722AFE13B006AAB1C /* SAStudentInfoTableView.m in Sources */,
 				A2AE4FC422AF9198001DBEAA /* SATabView.m in Sources */,
 				A2AE4F9B22AF755D001DBEAA /* main.m in Sources */,
 				A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */,

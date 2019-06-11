@@ -43,7 +43,7 @@
     [super viewDidLayoutSubviews];
     
     [self.studentNoContainerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.top.equalTo(self.view).offset(30);
+        make.left.top.equalTo(self.view).offset(20);
         make.right.equalTo(self.view).offset(-20);
         make.height.offset(45);
     }];
