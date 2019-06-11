@@ -10,7 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void (^ScrollViewBlock)(NSInteger index);
+
 @interface SAContentView : SAView
+
+- (instancetype)initWithFrame:(CGRect)frame childVcs:(NSArray *)childVcs parentVC:(UIViewController *)parentVC;
+//通知控制器的 block
+- (void)scrollIndex:(ScrollViewBlock)block;
+//控制器调用此方法设置偏移
+- (void)setOffset:(NSInteger)page;
 
 @end
 

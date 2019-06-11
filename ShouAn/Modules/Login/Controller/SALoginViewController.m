@@ -7,8 +7,14 @@
 //
 
 #import "SALoginViewController.h"
+#import "SATabView.h"
+#import "SALoginChildViewController.h"
+#import "SARegisterChildViewController.h"
+#import "SAContentView.h"
 
 @interface SALoginViewController ()
+
+@property (nonatomic, strong) SATabView *tabView;
 
 @end
 
@@ -17,22 +23,67 @@
 - (void)loadView {
     UIImageView *imageView = [[UIImageView alloc]initWithFrame:[UIScreen mainScreen].bounds];
     imageView.image = [UIImage imageNamed:@"loginBackgroundImage"];
+    imageView.userInteractionEnabled = YES;
     self.view = imageView;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self initSubviews];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)initSubviews {
+    [self.view addSubview:self.tabView];
+    
+    SALoginChildViewController *loginChildViewController = [[SALoginChildViewController alloc]init];
+    SARegisterChildViewController *registerChildViewController = [[SARegisterChildViewController alloc]init];
+    
+    NSArray *childVcs = @[loginChildViewController, registerChildViewController];
+    
+    SAContentView *contentView = [[SAContentView alloc]initWithFrame:CGRectZero childVcs:childVcs parentVC:self];
+    
+    [self.view addSubview:contentView];
+    [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.tabView.mas_bottom).offset(20);
+        make.left.equalTo(self.view).offset(25);
+        make.right.equalTo(self.view).offset(-25);
+        make.height.offset(300);
+    }];
+    
+    __weak typeof(self.tabView) weakTab = self.tabView;
+    [contentView scrollIndex:^(NSInteger index) {
+        NSLog(@"%s---%d---%zd", __func__, __LINE__, index);
+        
+        [weakTab setCurrentLabel:index];
+    }];
+    
+    
+    __weak typeof(contentView) weakContent = contentView;
+    [self.tabView pageClick:^(NSInteger index) {
+        if (index == 20) {
+            NSLog(@"ttt");
+            return;
+        }
+        [weakContent setOffset:index];
+    }];
+    
 }
-*/
+
+- (void)initContentView {
+    
+    
+    
+}
+
+
+#pragma mark - lazy loading
+
+- (SATabView *)tabView {
+    if (!_tabView) {
+        _tabView = [[SATabView alloc]initWithFrame:CGRectMake(40, 150, kScreenWidth-2*40, 70) titles:@[@"登录", @"注册"]];
+    }
+    return _tabView;
+}
 
 @end

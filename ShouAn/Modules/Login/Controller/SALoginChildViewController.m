@@ -10,6 +10,16 @@
 
 @interface SALoginChildViewController ()
 
+// 学号
+@property (nonatomic, strong) UIView *studentNoContainerView;
+@property (nonatomic, strong) UITextField *studentNoTextField;
+
+// 密码
+@property (nonatomic, strong) UIView *pwdContainerView;
+@property (nonatomic, strong) UITextField *pwdTextField;
+
+@property (nonatomic, strong) UIButton *loginButton;
+
 @end
 
 @implementation SALoginChildViewController
@@ -17,16 +27,112 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self initSubviews];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)initSubviews {
+    [self.view addSubview:self.studentNoContainerView];
+    [self.view addSubview:self.pwdContainerView];
+    [self.view addSubview:self.loginButton];
+    
+    [self.studentNoContainerView addSubview:self.studentNoTextField];
+    [self.pwdContainerView addSubview:self.pwdTextField];
 }
-*/
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    [self.studentNoContainerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.equalTo(self.view).offset(30);
+        make.right.equalTo(self.view).offset(-20);
+        make.height.offset(45);
+    }];
+    
+    [self.pwdContainerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.studentNoContainerView);
+        make.top.equalTo(self.studentNoContainerView.mas_bottom).offset(25);
+        make.height.offset(45);
+    }];
+    
+    [self.studentNoTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.studentNoContainerView).offset(10);
+        make.top.equalTo(self.studentNoContainerView).offset(5);
+        make.right.equalTo(self.studentNoContainerView).offset(-10);
+        make.bottom.equalTo(self.studentNoContainerView).offset(-5);
+    }];
+    
+    [self.pwdTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.pwdContainerView).offset(10);
+        make.top.equalTo(self.pwdContainerView).offset(5);
+        make.right.equalTo(self.pwdContainerView).offset(-10);
+        make.bottom.equalTo(self.pwdContainerView).offset(-5);
+    }];
+    
+    [self.loginButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.pwdContainerView);
+        make.top.equalTo(self.pwdContainerView.mas_bottom).offset(30);
+        make.height.offset(45);
+    }];
+}
+
+#pragma mark - private method
+
+- (void)loginButtonClicked: (UIButton *)loginButton {
+    NSLog(@"loginButtonClicked");
+}
+
+#pragma mark - lazy loading
+
+- (UIView *)studentNoContainerView {
+    if (!_studentNoContainerView) {
+        _studentNoContainerView = [[UIView alloc]init];
+        _studentNoContainerView.layer.cornerRadius = 22.0;
+        _studentNoContainerView.layer.masksToBounds = YES;
+        _studentNoContainerView.layer.borderWidth = 1.0;
+        _studentNoContainerView.layer.borderColor = SAHexColor(0xDCDCDC).CGColor;
+    }
+    return _studentNoContainerView;
+}
+
+- (UITextField *)studentNoTextField {
+    if (!_studentNoTextField) {
+        _studentNoTextField = [[UITextField alloc]init];
+        _studentNoTextField.font = [UIFont systemFontOfSize:15];
+        _studentNoTextField.placeholder = @"请输入学号";
+    }
+    return _studentNoTextField;
+}
+
+- (UIView *)pwdContainerView {
+    if (!_pwdContainerView) {
+        _pwdContainerView = [[UIView alloc]init];
+        _pwdContainerView.layer.cornerRadius = 22.0;
+        _pwdContainerView.layer.masksToBounds = YES;
+        _pwdContainerView.layer.borderWidth = 1.0;
+        _pwdContainerView.layer.borderColor = SAHexColor(0xDCDCDC).CGColor;
+    }
+    return _pwdContainerView;
+}
+
+- (UITextField *)pwdTextField {
+    if (!_pwdTextField) {
+        _pwdTextField = [[UITextField alloc]init];
+        _pwdTextField.font = [UIFont systemFontOfSize:15];
+        _pwdTextField.placeholder = @"请输密码";
+    }
+    return _pwdTextField;
+}
+
+- (UIButton *)loginButton {
+    if (!_loginButton) {
+        _loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _loginButton.layer.cornerRadius = 22.0;
+        _loginButton.layer.masksToBounds = YES;
+        [_loginButton setTitle:@"登录" forState:UIControlStateNormal];
+        [_loginButton setBackgroundColor:SAGreenColor];
+        [_loginButton addTarget:self action:@selector(loginButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _loginButton;
+}
 
 @end
