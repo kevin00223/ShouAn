@@ -16,6 +16,12 @@
 		A2AE4FB022AF8277001DBEAA /* SATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FAF22AF8277001DBEAA /* SATabBarController.m */; };
 		A2AE4FB322AF828C001DBEAA /* SABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FB222AF828C001DBEAA /* SABaseViewController.m */; };
 		A2AE4FBC22AF8EF9001DBEAA /* SALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FBA22AF8EF9001DBEAA /* SALoginViewController.m */; };
+		A2AE4FBF22AF914E001DBEAA /* SAView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FBE22AF914E001DBEAA /* SAView.m */; };
+		A2AE4FC422AF9198001DBEAA /* SATabView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FC322AF9198001DBEAA /* SATabView.m */; };
+		A2AE4FCB22AFA063001DBEAA /* UIView+SAExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FCA22AFA062001DBEAA /* UIView+SAExtension.m */; };
+		A2AE4FD222AFA32D001DBEAA /* SALoginChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FD122AFA32D001DBEAA /* SALoginChildViewController.m */; };
+		A2AE4FD822AFA3AA001DBEAA /* SARegisterChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FD722AFA3AA001DBEAA /* SARegisterChildViewController.m */; };
+		A2AE4FDB22AFA457001DBEAA /* SAContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FDA22AFA457001DBEAA /* SAContentView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,18 @@
 		A2AE4FB222AF828C001DBEAA /* SABaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SABaseViewController.m; sourceTree = "<group>"; };
 		A2AE4FBA22AF8EF9001DBEAA /* SALoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALoginViewController.m; sourceTree = "<group>"; };
 		A2AE4FBB22AF8EF9001DBEAA /* SALoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SALoginViewController.h; sourceTree = "<group>"; };
+		A2AE4FBD22AF914E001DBEAA /* SAView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAView.h; sourceTree = "<group>"; };
+		A2AE4FBE22AF914E001DBEAA /* SAView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAView.m; sourceTree = "<group>"; };
+		A2AE4FC222AF9198001DBEAA /* SATabView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SATabView.h; sourceTree = "<group>"; };
+		A2AE4FC322AF9198001DBEAA /* SATabView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SATabView.m; sourceTree = "<group>"; };
+		A2AE4FC922AFA062001DBEAA /* UIView+SAExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SAExtension.h"; sourceTree = "<group>"; };
+		A2AE4FCA22AFA062001DBEAA /* UIView+SAExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SAExtension.m"; sourceTree = "<group>"; };
+		A2AE4FD022AFA32D001DBEAA /* SALoginChildViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SALoginChildViewController.h; sourceTree = "<group>"; };
+		A2AE4FD122AFA32D001DBEAA /* SALoginChildViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SALoginChildViewController.m; sourceTree = "<group>"; };
+		A2AE4FD622AFA3AA001DBEAA /* SARegisterChildViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SARegisterChildViewController.h; sourceTree = "<group>"; };
+		A2AE4FD722AFA3AA001DBEAA /* SARegisterChildViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SARegisterChildViewController.m; sourceTree = "<group>"; };
+		A2AE4FD922AFA457001DBEAA /* SAContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAContentView.h; sourceTree = "<group>"; };
+		A2AE4FDA22AFA457001DBEAA /* SAContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAContentView.m; sourceTree = "<group>"; };
 		DE3639F09083C942D12A8D87 /* libPods-ShouAn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShouAn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E993A96181A20CD49670007B /* Pods-ShouAn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShouAn.debug.xcconfig"; path = "Target Support Files/Pods-ShouAn/Pods-ShouAn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,9 +132,9 @@
 		A2AE4FA222AF7646001DBEAA /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A2AE4FC622AF9F1D001DBEAA /* Category */,
 				A2AE4FAA22AF8212001DBEAA /* Share */,
 				A2AE4FA622AF76DB001DBEAA /* Const */,
-				A2AE4FA522AF76BE001DBEAA /* Catgory */,
 				A2AE4FA422AF7668001DBEAA /* Utilities */,
 			);
 			path = Base;
@@ -136,13 +154,6 @@
 			children = (
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		A2AE4FA522AF76BE001DBEAA /* Catgory */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Catgory;
 			sourceTree = "<group>";
 		};
 		A2AE4FA622AF76DB001DBEAA /* Const */ = {
@@ -170,6 +181,8 @@
 				A2AE4FAF22AF8277001DBEAA /* SATabBarController.m */,
 				A2AE4FB122AF828B001DBEAA /* SABaseViewController.h */,
 				A2AE4FB222AF828C001DBEAA /* SABaseViewController.m */,
+				A2AE4FBD22AF914E001DBEAA /* SAView.h */,
+				A2AE4FBE22AF914E001DBEAA /* SAView.m */,
 			);
 			path = Share;
 			sourceTree = "<group>";
@@ -177,12 +190,45 @@
 		A2AE4FB922AF8EF9001DBEAA /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				A2AE4FBA22AF8EF9001DBEAA /* SALoginViewController.m */,
-				A2AE4FBB22AF8EF9001DBEAA /* SALoginViewController.h */,
+				A2AE4FC122AF9171001DBEAA /* View */,
+				A2AE4FC022AF9167001DBEAA /* Controller */,
 			);
 			name = Login;
 			path = ShouAn/Modules/Login;
 			sourceTree = SOURCE_ROOT;
+		};
+		A2AE4FC022AF9167001DBEAA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A2AE4FBB22AF8EF9001DBEAA /* SALoginViewController.h */,
+				A2AE4FBA22AF8EF9001DBEAA /* SALoginViewController.m */,
+				A2AE4FD022AFA32D001DBEAA /* SALoginChildViewController.h */,
+				A2AE4FD122AFA32D001DBEAA /* SALoginChildViewController.m */,
+				A2AE4FD622AFA3AA001DBEAA /* SARegisterChildViewController.h */,
+				A2AE4FD722AFA3AA001DBEAA /* SARegisterChildViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A2AE4FC122AF9171001DBEAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2AE4FC222AF9198001DBEAA /* SATabView.h */,
+				A2AE4FC322AF9198001DBEAA /* SATabView.m */,
+				A2AE4FD922AFA457001DBEAA /* SAContentView.h */,
+				A2AE4FDA22AFA457001DBEAA /* SAContentView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2AE4FC622AF9F1D001DBEAA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A2AE4FC922AFA062001DBEAA /* UIView+SAExtension.h */,
+				A2AE4FCA22AFA062001DBEAA /* UIView+SAExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -282,10 +328,16 @@
 			files = (
 				A2AE4FBC22AF8EF9001DBEAA /* SALoginViewController.m in Sources */,
 				A2AE4FAD22AF824B001DBEAA /* SANavigationController.m in Sources */,
+				A2AE4FD822AFA3AA001DBEAA /* SARegisterChildViewController.m in Sources */,
 				A2AE4FB322AF828C001DBEAA /* SABaseViewController.m in Sources */,
+				A2AE4FDB22AFA457001DBEAA /* SAContentView.m in Sources */,
+				A2AE4FBF22AF914E001DBEAA /* SAView.m in Sources */,
+				A2AE4FC422AF9198001DBEAA /* SATabView.m in Sources */,
 				A2AE4F9B22AF755D001DBEAA /* main.m in Sources */,
 				A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */,
+				A2AE4FD222AFA32D001DBEAA /* SALoginChildViewController.m in Sources */,
 				A2AE4FB022AF8277001DBEAA /* SATabBarController.m in Sources */,
+				A2AE4FCB22AFA063001DBEAA /* UIView+SAExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

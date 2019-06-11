@@ -14,6 +14,12 @@
 
 @implementation SALoginViewController
 
+- (void)loadView {
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    imageView.image = [UIImage imageNamed:@"loginBackgroundImage"];
+    self.view = imageView;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
