@@ -11,6 +11,10 @@
 		A215EBB422AFE05A006AAB1C /* SAStudentInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */; };
 		A215EBB722AFE13B006AAB1C /* SAStudentInfoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB622AFE13B006AAB1C /* SAStudentInfoTableView.m */; };
 		A215EBBA22AFE520006AAB1C /* SAStudentInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB922AFE520006AAB1C /* SAStudentInfoCell.m */; };
+		A215EBCB22B00033006AAB1C /* SAMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBCA22B00033006AAB1C /* SAMineViewController.m */; };
+		A215EBCE22B00040006AAB1C /* SAMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBCD22B00040006AAB1C /* SAMessageViewController.m */; };
+		A215EBD122B0004B006AAB1C /* SASearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBD022B0004B006AAB1C /* SASearchViewController.m */; };
+		A215EBD722B00491006AAB1C /* SAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBD622B00491006AAB1C /* SAHomeViewController.m */; };
 		A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */; };
 		A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9422AF755D001DBEAA /* Assets.xcassets */; };
 		A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9622AF755D001DBEAA /* LaunchScreen.storyboard */; };
@@ -35,6 +39,14 @@
 		A215EBB622AFE13B006AAB1C /* SAStudentInfoTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAStudentInfoTableView.m; sourceTree = "<group>"; };
 		A215EBB822AFE520006AAB1C /* SAStudentInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoCell.h; sourceTree = "<group>"; };
 		A215EBB922AFE520006AAB1C /* SAStudentInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAStudentInfoCell.m; sourceTree = "<group>"; };
+		A215EBC922B00033006AAB1C /* SAMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMineViewController.h; sourceTree = "<group>"; };
+		A215EBCA22B00033006AAB1C /* SAMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMineViewController.m; sourceTree = "<group>"; };
+		A215EBCC22B00040006AAB1C /* SAMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMessageViewController.h; sourceTree = "<group>"; };
+		A215EBCD22B00040006AAB1C /* SAMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMessageViewController.m; sourceTree = "<group>"; };
+		A215EBCF22B0004B006AAB1C /* SASearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SASearchViewController.h; sourceTree = "<group>"; };
+		A215EBD022B0004B006AAB1C /* SASearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SASearchViewController.m; sourceTree = "<group>"; };
+		A215EBD522B00491006AAB1C /* SAHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAHomeViewController.h; sourceTree = "<group>"; };
+		A215EBD622B00491006AAB1C /* SAHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAHomeViewController.m; sourceTree = "<group>"; };
 		A2AE4F8822AF755D001DBEAA /* ShouAn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShouAn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AE4F8B22AF755D001DBEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -97,6 +109,106 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A215EBBD22AFFFA4006AAB1C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A215EBC322AFFFFF006AAB1C /* Controller */,
+				A215EBC422AFFFFF006AAB1C /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A215EBBE22AFFFB2006AAB1C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A215EBC722B0001B006AAB1C /* Controller */,
+				A215EBC822B0001B006AAB1C /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		A215EBBF22AFFFBD006AAB1C /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				A215EBC622B0000D006AAB1C /* Controller */,
+				A215EBC522B0000C006AAB1C /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		A215EBC022AFFFC5006AAB1C /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				A215EBC222AFFFDE006AAB1C /* View */,
+				A215EBC122AFFFD5006AAB1C /* Controller */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		A215EBC122AFFFD5006AAB1C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A215EBC922B00033006AAB1C /* SAMineViewController.h */,
+				A215EBCA22B00033006AAB1C /* SAMineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A215EBC222AFFFDE006AAB1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A215EBC322AFFFFF006AAB1C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A215EBD522B00491006AAB1C /* SAHomeViewController.h */,
+				A215EBD622B00491006AAB1C /* SAHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A215EBC422AFFFFF006AAB1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A215EBC522B0000C006AAB1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A215EBC622B0000D006AAB1C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A215EBCC22B00040006AAB1C /* SAMessageViewController.h */,
+				A215EBCD22B00040006AAB1C /* SAMessageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A215EBC722B0001B006AAB1C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A215EBCF22B0004B006AAB1C /* SASearchViewController.h */,
+				A215EBD022B0004B006AAB1C /* SASearchViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A215EBC822B0001B006AAB1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A2AE4F7F22AF755D001DBEAA = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +245,10 @@
 		A2AE4FA122AF7639001DBEAA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A215EBC022AFFFC5006AAB1C /* Mine */,
+				A215EBBF22AFFFBD006AAB1C /* Message */,
+				A215EBBE22AFFFB2006AAB1C /* Search */,
+				A215EBBD22AFFFA4006AAB1C /* Home */,
 				A2AE4FB922AF8EF9001DBEAA /* Login */,
 			);
 			path = Modules;
@@ -343,6 +459,8 @@
 			files = (
 				A2AE4FBC22AF8EF9001DBEAA /* SALoginViewController.m in Sources */,
 				A2AE4FAD22AF824B001DBEAA /* SANavigationController.m in Sources */,
+				A215EBD722B00491006AAB1C /* SAHomeViewController.m in Sources */,
+				A215EBD122B0004B006AAB1C /* SASearchViewController.m in Sources */,
 				A215EBBA22AFE520006AAB1C /* SAStudentInfoCell.m in Sources */,
 				A2AE4FD822AFA3AA001DBEAA /* SARegisterChildViewController.m in Sources */,
 				A2AE4FB322AF828C001DBEAA /* SABaseViewController.m in Sources */,
@@ -354,6 +472,8 @@
 				A2AE4F9B22AF755D001DBEAA /* main.m in Sources */,
 				A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */,
 				A2AE4FD222AFA32D001DBEAA /* SALoginChildViewController.m in Sources */,
+				A215EBCE22B00040006AAB1C /* SAMessageViewController.m in Sources */,
+				A215EBCB22B00033006AAB1C /* SAMineViewController.m in Sources */,
 				A2AE4FB022AF8277001DBEAA /* SATabBarController.m in Sources */,
 				A2AE4FCB22AFA063001DBEAA /* UIView+SAExtension.m in Sources */,
 			);

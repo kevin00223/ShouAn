@@ -1,28 +1,22 @@
 //
-//  SANavigationController.m
+//  SASearchViewController.m
 //  ShouAn
 //
 //  Created by 李凯 on 2019/6/11.
 //  Copyright © 2019 LK. All rights reserved.
 //
 
-#import "SANavigationController.h"
+#import "SASearchViewController.h"
 
-@interface SANavigationController ()
+@interface SASearchViewController ()
 
 @end
 
-@implementation SANavigationController
+@implementation SASearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    [self.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
-    [self.navigationBar setShadowImage:[[UIImage alloc] init]];
-
-    [self.navigationBar setBarTintColor:SAGreenColor];
-    self.navigationBar.translucent = NO;
 }
 
 /*

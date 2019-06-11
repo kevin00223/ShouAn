@@ -1,28 +1,34 @@
 //
-//  SANavigationController.m
+//  SAHomeViewController.m
 //  ShouAn
 //
 //  Created by 李凯 on 2019/6/11.
 //  Copyright © 2019 LK. All rights reserved.
 //
 
-#import "SANavigationController.h"
+#import "SAHomeViewController.h"
 
-@interface SANavigationController ()
+@interface SAHomeViewController ()
 
 @end
 
-@implementation SANavigationController
+@implementation SAHomeViewController
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    [self.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
-    [self.navigationBar setShadowImage:[[UIImage alloc] init]];
-
-    [self.navigationBar setBarTintColor:SAGreenColor];
-    self.navigationBar.translucent = NO;
 }
 
 /*
