@@ -15,6 +15,7 @@
 		A2AE4FAD22AF824B001DBEAA /* SANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FAC22AF824B001DBEAA /* SANavigationController.m */; };
 		A2AE4FB022AF8277001DBEAA /* SATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FAF22AF8277001DBEAA /* SATabBarController.m */; };
 		A2AE4FB322AF828C001DBEAA /* SABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FB222AF828C001DBEAA /* SABaseViewController.m */; };
+		A2AE4FBC22AF8EF9001DBEAA /* SALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FBA22AF8EF9001DBEAA /* SALoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		A2AE4FAF22AF8277001DBEAA /* SATabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SATabBarController.m; sourceTree = "<group>"; };
 		A2AE4FB122AF828B001DBEAA /* SABaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SABaseViewController.h; sourceTree = "<group>"; };
 		A2AE4FB222AF828C001DBEAA /* SABaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SABaseViewController.m; sourceTree = "<group>"; };
+		A2AE4FBA22AF8EF9001DBEAA /* SALoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALoginViewController.m; sourceTree = "<group>"; };
+		A2AE4FBB22AF8EF9001DBEAA /* SALoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SALoginViewController.h; sourceTree = "<group>"; };
 		DE3639F09083C942D12A8D87 /* libPods-ShouAn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShouAn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E993A96181A20CD49670007B /* Pods-ShouAn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShouAn.debug.xcconfig"; path = "Target Support Files/Pods-ShouAn/Pods-ShouAn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +106,7 @@
 		A2AE4FA122AF7639001DBEAA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A2AE4FB922AF8EF9001DBEAA /* Login */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -169,6 +173,16 @@
 			);
 			path = Share;
 			sourceTree = "<group>";
+		};
+		A2AE4FB922AF8EF9001DBEAA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A2AE4FBA22AF8EF9001DBEAA /* SALoginViewController.m */,
+				A2AE4FBB22AF8EF9001DBEAA /* SALoginViewController.h */,
+			);
+			name = Login;
+			path = ShouAn/Modules/Login;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -266,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AE4FBC22AF8EF9001DBEAA /* SALoginViewController.m in Sources */,
 				A2AE4FAD22AF824B001DBEAA /* SANavigationController.m in Sources */,
 				A2AE4FB322AF828C001DBEAA /* SABaseViewController.m in Sources */,
 				A2AE4F9B22AF755D001DBEAA /* main.m in Sources */,
