@@ -20,7 +20,6 @@ static NSString *infoCellID = @"infoCell";
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.tableView.dataSource = self;
         [self.tableView registerClass:[SABaseTableViewCell class] forCellReuseIdentifier:infoCellID];
     }
     return self;

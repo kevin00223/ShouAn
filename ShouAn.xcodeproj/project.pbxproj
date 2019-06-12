@@ -12,6 +12,9 @@
 		A20D382E22B135790090321D /* SAChangePwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D382D22B135790090321D /* SAChangePwdView.m */; };
 		A20D383122B136E80090321D /* SABaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D383022B136E80090321D /* SABaseTableViewCell.m */; };
 		A20D383422B142800090321D /* SAAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D383322B142800090321D /* SAAboutUsViewController.m */; };
+		A20D383722B14F130090321D /* SASettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D383622B14F130090321D /* SASettingViewController.m */; };
+		A20D383A22B14F5F0090321D /* SASettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D383922B14F5F0090321D /* SASettingView.m */; };
+		A20D384022B1582D0090321D /* SAFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D383F22B1582D0090321D /* SAFeedbackViewController.m */; };
 		A215EBB422AFE05A006AAB1C /* SAStudentInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */; };
 		A215EBB722AFE13B006AAB1C /* SAStudentInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB622AFE13B006AAB1C /* SAStudentInfoView.m */; };
 		A215EBCB22B00033006AAB1C /* SAMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBCA22B00033006AAB1C /* SAMineViewController.m */; };
@@ -46,6 +49,12 @@
 		A20D383022B136E80090321D /* SABaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SABaseTableViewCell.m; sourceTree = "<group>"; };
 		A20D383222B142800090321D /* SAAboutUsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAAboutUsViewController.h; sourceTree = "<group>"; };
 		A20D383322B142800090321D /* SAAboutUsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAAboutUsViewController.m; sourceTree = "<group>"; };
+		A20D383522B14F130090321D /* SASettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SASettingViewController.h; sourceTree = "<group>"; };
+		A20D383622B14F130090321D /* SASettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SASettingViewController.m; sourceTree = "<group>"; };
+		A20D383822B14F5F0090321D /* SASettingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SASettingView.h; sourceTree = "<group>"; };
+		A20D383922B14F5F0090321D /* SASettingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SASettingView.m; sourceTree = "<group>"; };
+		A20D383E22B1582D0090321D /* SAFeedbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAFeedbackViewController.h; sourceTree = "<group>"; };
+		A20D383F22B1582D0090321D /* SAFeedbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAFeedbackViewController.m; sourceTree = "<group>"; };
 		A215EBB222AFE05A006AAB1C /* SAStudentInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoViewController.h; sourceTree = "<group>"; };
 		A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAStudentInfoViewController.m; sourceTree = "<group>"; };
 		A215EBB522AFE13B006AAB1C /* SAStudentInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoView.h; sourceTree = "<group>"; };
@@ -169,6 +178,10 @@
 				A20D382A22B135530090321D /* SAChangePwdViewController.m */,
 				A20D383222B142800090321D /* SAAboutUsViewController.h */,
 				A20D383322B142800090321D /* SAAboutUsViewController.m */,
+				A20D383522B14F130090321D /* SASettingViewController.h */,
+				A20D383622B14F130090321D /* SASettingViewController.m */,
+				A20D383E22B1582D0090321D /* SAFeedbackViewController.h */,
+				A20D383F22B1582D0090321D /* SAFeedbackViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -382,6 +395,8 @@
 			children = (
 				A20D382C22B135790090321D /* SAChangePwdView.h */,
 				A20D382D22B135790090321D /* SAChangePwdView.m */,
+				A20D383822B14F5F0090321D /* SASettingView.h */,
+				A20D383922B14F5F0090321D /* SASettingView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -493,11 +508,14 @@
 				A2AE4FE822B0A89C001DBEAA /* UIButton+SACustomButton.m in Sources */,
 				A215EBB422AFE05A006AAB1C /* SAStudentInfoViewController.m in Sources */,
 				A20D383422B142800090321D /* SAAboutUsViewController.m in Sources */,
+				A20D384022B1582D0090321D /* SAFeedbackViewController.m in Sources */,
 				A215EBB722AFE13B006AAB1C /* SAStudentInfoView.m in Sources */,
 				A20D382B22B135530090321D /* SAChangePwdViewController.m in Sources */,
 				A2AE4FC422AF9198001DBEAA /* SATabView.m in Sources */,
+				A20D383722B14F130090321D /* SASettingViewController.m in Sources */,
 				A2AE4F9B22AF755D001DBEAA /* main.m in Sources */,
 				A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */,
+				A20D383A22B14F5F0090321D /* SASettingView.m in Sources */,
 				A2AE4FD222AFA32D001DBEAA /* SALoginChildViewController.m in Sources */,
 				A215EBCE22B00040006AAB1C /* SAMessageViewController.m in Sources */,
 				A20D383122B136E80090321D /* SABaseTableViewCell.m in Sources */,

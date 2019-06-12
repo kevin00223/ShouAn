@@ -9,6 +9,7 @@
 #import "SAMineViewController.h"
 #import "SAChangePwdViewController.h"
 #import "SAAboutUsViewController.h"
+#import "SASettingViewController.h"
 
 static NSString *mineCellID = @"mineCell";
 
@@ -121,7 +122,7 @@ static NSString *mineCellID = @"mineCell";
             [self.navigationController pushViewController:[SAAboutUsViewController new] animated:YES];
             break;
         case 3:
-            NSLog(@"设置");
+            [self.navigationController pushViewController:[SASettingViewController new] animated:YES];
             break;
         default:
             break;

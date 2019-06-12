@@ -16,7 +16,6 @@ static NSString *changePwdCellID = @"changePwdCell";
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.tableView.dataSource = self;
         [self.tableView registerClass:[SABaseTableViewCell class] forCellReuseIdentifier:changePwdCellID];
     }
     return self;
