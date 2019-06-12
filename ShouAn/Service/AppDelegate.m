@@ -22,9 +22,9 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
-//    SANavigationController *loginNav = [[SANavigationController alloc]initWithRootViewController:[[SALoginViewController alloc] init]];
+    SANavigationController *loginNav = [[SANavigationController alloc]initWithRootViewController:[[SALoginViewController alloc] init]];
     SATabBarController *tabBarVC = [[SATabBarController alloc]init];
-    self.window.rootViewController = tabBarVC;
+    self.window.rootViewController = loginNav;
     [self.window makeKeyAndVisible];
     
     return YES;

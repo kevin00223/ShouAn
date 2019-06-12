@@ -1,5 +1,5 @@
 //
-//  SAStudentInfoTableView.h
+//  SAStudentInfoView.h
 //  ShouAn
 //
 //  Created by 李凯 on 2019/6/11.
@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SAViewWithBottomButton.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SAStudentInfoTableView : UITableView
+@interface SAStudentInfoView : SAViewWithBottomButton
 
 @end
 

@@ -1,0 +1,24 @@
+//
+//  SAViewWithBottomButton.h
+//  ShouAn
+//
+//  Created by 李凯 on 2019/6/12.
+//  Copyright © 2019 LK. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "SAView.h"
+
+typedef void(^ConfirmButtonClickedBlock)(void);
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface SAViewWithBottomButton : SAView
+
+@property (nonatomic, strong) UITableView *tableView;
+
+@property (nonatomic, copy) ConfirmButtonClickedBlock confirmButtonClickedBlock;
+
+@end
+
+NS_ASSUME_NONNULL_END

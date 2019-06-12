@@ -7,11 +7,11 @@
 //
 
 #import "SAStudentInfoViewController.h"
-#import "SAStudentInfoTableView.h"
+#import "SAStudentInfoView.h"
 
 @interface SAStudentInfoViewController ()
 
-@property (nonatomic, strong) SAStudentInfoTableView *studentInfoView;
+@property (nonatomic, strong) SAStudentInfoView *studentInfoView;
 
 @end
 
@@ -30,6 +30,9 @@
 
 - (void)initSubviews {
     [self.view addSubview:self.studentInfoView];
+    self.studentInfoView.confirmButtonClickedBlock = ^{
+        NSLog(@"点击了确认按钮");
+    };
 }
 
 - (void)viewDidLayoutSubviews {
@@ -42,10 +45,9 @@
 
 #pragma mark - lazy loading
 
-- (SAStudentInfoTableView *)studentInfoView {
+- (SAStudentInfoView *)studentInfoView {
     if (!_studentInfoView) {
-        _studentInfoView = [[SAStudentInfoTableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
-        _studentInfoView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+        _studentInfoView = [[SAStudentInfoView alloc]init];
     }
     return _studentInfoView;
 }
