@@ -29,6 +29,7 @@
 		A2AE4FD222AFA32D001DBEAA /* SALoginChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FD122AFA32D001DBEAA /* SALoginChildViewController.m */; };
 		A2AE4FD822AFA3AA001DBEAA /* SARegisterChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FD722AFA3AA001DBEAA /* SARegisterChildViewController.m */; };
 		A2AE4FDB22AFA457001DBEAA /* SAContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FDA22AFA457001DBEAA /* SAContentView.m */; };
+		A2AE4FE822B0A89C001DBEAA /* UIButton+SACustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FE722B0A89C001DBEAA /* UIButton+SACustomButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,8 @@
 		A2AE4FD722AFA3AA001DBEAA /* SARegisterChildViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SARegisterChildViewController.m; sourceTree = "<group>"; };
 		A2AE4FD922AFA457001DBEAA /* SAContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAContentView.h; sourceTree = "<group>"; };
 		A2AE4FDA22AFA457001DBEAA /* SAContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAContentView.m; sourceTree = "<group>"; };
+		A2AE4FE622B0A89C001DBEAA /* UIButton+SACustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+SACustomButton.h"; sourceTree = "<group>"; };
+		A2AE4FE722B0A89C001DBEAA /* UIButton+SACustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SACustomButton.m"; sourceTree = "<group>"; };
 		DE3639F09083C942D12A8D87 /* libPods-ShouAn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShouAn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E993A96181A20CD49670007B /* Pods-ShouAn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShouAn.debug.xcconfig"; path = "Target Support Files/Pods-ShouAn/Pods-ShouAn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,8 +115,8 @@
 		A215EBBD22AFFFA4006AAB1C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A2AE4FE222B0A1F2001DBEAA /* View */,
 				A215EBC322AFFFFF006AAB1C /* Controller */,
-				A215EBC422AFFFFF006AAB1C /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -168,13 +171,6 @@
 				A215EBD622B00491006AAB1C /* SAHomeViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		A215EBC422AFFFFF006AAB1C /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		A215EBC522B0000C006AAB1C /* View */ = {
@@ -357,8 +353,17 @@
 			children = (
 				A2AE4FC922AFA062001DBEAA /* UIView+SAExtension.h */,
 				A2AE4FCA22AFA062001DBEAA /* UIView+SAExtension.m */,
+				A2AE4FE622B0A89C001DBEAA /* UIButton+SACustomButton.h */,
+				A2AE4FE722B0A89C001DBEAA /* UIButton+SACustomButton.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		A2AE4FE222B0A1F2001DBEAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,6 +471,7 @@
 				A2AE4FB322AF828C001DBEAA /* SABaseViewController.m in Sources */,
 				A2AE4FDB22AFA457001DBEAA /* SAContentView.m in Sources */,
 				A2AE4FBF22AF914E001DBEAA /* SAView.m in Sources */,
+				A2AE4FE822B0A89C001DBEAA /* UIButton+SACustomButton.m in Sources */,
 				A215EBB422AFE05A006AAB1C /* SAStudentInfoViewController.m in Sources */,
 				A215EBB722AFE13B006AAB1C /* SAStudentInfoTableView.m in Sources */,
 				A2AE4FC422AF9198001DBEAA /* SATabView.m in Sources */,

@@ -27,10 +27,10 @@
 - (void)initViewControllers {
     [self.tabBar setTintColor:SAGreenColor];
     
-    UIViewController *vc1 = [self setupChildViewControllerWithControllerName:@"SAHomeViewController" title:@"首页" imageName:@"TabBar_HomeBar"];
-    UIViewController *vc2 = [self setupChildViewControllerWithControllerName:@"SASearchViewController" title:@"搜索" imageName:@"TabBar_Businesses"];
-    UIViewController *vc3 = [self setupChildViewControllerWithControllerName:@"SAMessageViewController" title:@"消息" imageName:@"TabBar_Friends"];
-    UIViewController *vc4 = [self setupChildViewControllerWithControllerName:@"SAMineViewController" title:@"我的" imageName:@"TabBar_Assets"];
+    UIViewController *vc1 = [self setupChildViewControllerWithControllerName:@"SAHomeViewController" title:@"首页" imageName:@"home"];
+    UIViewController *vc2 = [self setupChildViewControllerWithControllerName:@"SASearchViewController" title:@"搜索" imageName:@"search"];
+    UIViewController *vc3 = [self setupChildViewControllerWithControllerName:@"SAMessageViewController" title:@"消息" imageName:@"message"];
+    UIViewController *vc4 = [self setupChildViewControllerWithControllerName:@"SAMineViewController" title:@"我的" imageName:@"mine"];
     
     self.viewControllers = @[vc1, vc2, vc3, vc4];
 }

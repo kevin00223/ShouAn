@@ -20,4 +20,30 @@
 
 #define SAGreenColor SAHexColor(0x4CCD78)
 
+
+/**
+ iPhoneX
+ */
+#define kIsIPhoneX ((kScreenWidth == 375 && kScreenHeight == 812) ? YES : NO)
+
+/**
+ 状态栏+导航栏高度
+ */
+#define kStatusBarAndNavigationBarHeight (kIsIPhoneX ? 88 : 64)
+
+/**
+ 状态栏高度
+ */
+#define kStatusBarHeight (kIsIPhoneX ? 44 : 20)
+
+/**
+ 导航栏高度
+ */
+#define kNavigationBarHeight 44
+
+/**
+ tabBar高度
+ */
+#define kTabBarHeight (kIsIPhoneX ? (49+34) : 49)
+
 #endif /* SAConst_h */
