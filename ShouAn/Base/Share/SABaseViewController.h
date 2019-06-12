@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SABaseViewController : UIViewController
 
+/**
+ * 获取父控制器
+ */
+- (UIViewController *)parentViewController;
+
 @end
 
 NS_ASSUME_NONNULL_END
