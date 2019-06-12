@@ -11,6 +11,7 @@
 		A20D382B22B135530090321D /* SAChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D382A22B135530090321D /* SAChangePwdViewController.m */; };
 		A20D382E22B135790090321D /* SAChangePwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D382D22B135790090321D /* SAChangePwdView.m */; };
 		A20D383122B136E80090321D /* SABaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D383022B136E80090321D /* SABaseTableViewCell.m */; };
+		A20D383422B142800090321D /* SAAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D383322B142800090321D /* SAAboutUsViewController.m */; };
 		A215EBB422AFE05A006AAB1C /* SAStudentInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */; };
 		A215EBB722AFE13B006AAB1C /* SAStudentInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB622AFE13B006AAB1C /* SAStudentInfoView.m */; };
 		A215EBCB22B00033006AAB1C /* SAMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBCA22B00033006AAB1C /* SAMineViewController.m */; };
@@ -43,6 +44,8 @@
 		A20D382D22B135790090321D /* SAChangePwdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAChangePwdView.m; sourceTree = "<group>"; };
 		A20D382F22B136E80090321D /* SABaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SABaseTableViewCell.h; sourceTree = "<group>"; };
 		A20D383022B136E80090321D /* SABaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SABaseTableViewCell.m; sourceTree = "<group>"; };
+		A20D383222B142800090321D /* SAAboutUsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAAboutUsViewController.h; sourceTree = "<group>"; };
+		A20D383322B142800090321D /* SAAboutUsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAAboutUsViewController.m; sourceTree = "<group>"; };
 		A215EBB222AFE05A006AAB1C /* SAStudentInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoViewController.h; sourceTree = "<group>"; };
 		A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAStudentInfoViewController.m; sourceTree = "<group>"; };
 		A215EBB522AFE13B006AAB1C /* SAStudentInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoView.h; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 				A215EBCA22B00033006AAB1C /* SAMineViewController.m */,
 				A20D382922B135530090321D /* SAChangePwdViewController.h */,
 				A20D382A22B135530090321D /* SAChangePwdViewController.m */,
+				A20D383222B142800090321D /* SAAboutUsViewController.h */,
+				A20D383322B142800090321D /* SAAboutUsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -487,6 +492,7 @@
 				A2AE4FBF22AF914E001DBEAA /* SAView.m in Sources */,
 				A2AE4FE822B0A89C001DBEAA /* UIButton+SACustomButton.m in Sources */,
 				A215EBB422AFE05A006AAB1C /* SAStudentInfoViewController.m in Sources */,
+				A20D383422B142800090321D /* SAAboutUsViewController.m in Sources */,
 				A215EBB722AFE13B006AAB1C /* SAStudentInfoView.m in Sources */,
 				A20D382B22B135530090321D /* SAChangePwdViewController.m in Sources */,
 				A2AE4FC422AF9198001DBEAA /* SATabView.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "SAMineViewController.h"
 #import "SAChangePwdViewController.h"
+#import "SAAboutUsViewController.h"
 
 static NSString *mineCellID = @"mineCell";
 
@@ -117,7 +118,7 @@ static NSString *mineCellID = @"mineCell";
             [self.navigationController pushViewController:[SAChangePwdViewController new] animated:YES];
             break;
         case 2:
-            NSLog(@"关于");
+            [self.navigationController pushViewController:[SAAboutUsViewController new] animated:YES];
             break;
         case 3:
             NSLog(@"设置");
@@ -177,7 +178,6 @@ static NSString *mineCellID = @"mineCell";
 - (UIView *)shadowView {
     if (!_shadowView) {
         _shadowView = [[UIView alloc]init];
-        _shadowView.backgroundColor = [UIColor redColor];
         _shadowView.layer.shadowColor = [UIColor lightGrayColor].CGColor;
         _shadowView.layer.shadowOffset = CGSizeMake(5, 5);
         _shadowView.layer.shadowOpacity = 0.3;
