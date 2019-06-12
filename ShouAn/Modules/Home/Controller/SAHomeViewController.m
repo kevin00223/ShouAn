@@ -52,7 +52,6 @@ typedef enum {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self createTopView];
-    
     [self createGridView];
 }
 
@@ -126,6 +125,8 @@ typedef enum {
 }
 
 - (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
     [self.banner mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.right.equalTo(self.view);
         make.height.offset(kTopViewHeight);
@@ -185,8 +186,6 @@ typedef enum {
     }
     return _infoLabel;
 }
-
-
 
 - (NSArray *)gridButtonInfo {
     if (!_gridButtonInfo) {
