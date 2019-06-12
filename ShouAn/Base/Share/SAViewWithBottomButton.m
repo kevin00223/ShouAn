@@ -45,10 +45,18 @@
     }];
 }
 
+- (void)setDataSource:(NSArray *)dataSource {
+    _dataSource = dataSource;
+}
+
 #pragma mark - private method
 
 - (void)confirmButtonClicked: (UIButton *)confirmButton {
     self.confirmButtonClickedBlock();
+}
+
+- (void)panGesture: (UIGestureRecognizer *)panGesture {
+    [self.tableView endEditing:YES];
 }
 
 #pragma mark - lazy loading
@@ -59,7 +67,9 @@
         _tableView.scrollEnabled = NO;
         _tableView.tableFooterView = [UIView new];
         [_tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-        _tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+//        _tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+        UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panGesture:)];
+        [_tableView addGestureRecognizer:pan];
     }
     return _tableView;
 }

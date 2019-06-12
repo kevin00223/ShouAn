@@ -1,27 +1,23 @@
 //
-//  SAStudentInfoView.m
+//  SAChangePwdView.m
 //  ShouAn
 //
-//  Created by 李凯 on 2019/6/11.
+//  Created by 李凯 on 2019/6/12.
 //  Copyright © 2019 LK. All rights reserved.
 //
 
-#import "SAStudentInfoView.h"
+#import "SAChangePwdView.h"
 #import "SABaseTableViewCell.h"
 
-static NSString *infoCellID = @"infoCell";
+static NSString *changePwdCellID = @"changePwdCell";
 
-@interface SAStudentInfoView ()
-
-@end
-
-@implementation SAStudentInfoView
+@implementation SAChangePwdView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         self.tableView.dataSource = self;
-        [self.tableView registerClass:[SABaseTableViewCell class] forCellReuseIdentifier:infoCellID];
+        [self.tableView registerClass:[SABaseTableViewCell class] forCellReuseIdentifier:changePwdCellID];
     }
     return self;
 }
@@ -37,10 +33,10 @@ static NSString *infoCellID = @"infoCell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    SABaseTableViewCell *infoCell = [tableView dequeueReusableCellWithIdentifier:infoCellID forIndexPath:indexPath];
-    infoCell.titleLabel.text = self.dataSource[indexPath.row];
-    infoCell.selectionStyle = UITableViewCellSelectionStyleNone;
-    return infoCell;
+    SABaseTableViewCell *changePwdCell = [tableView dequeueReusableCellWithIdentifier:changePwdCellID forIndexPath:indexPath];
+    changePwdCell.titleLabel.text = self.dataSource[indexPath.row];
+    changePwdCell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return changePwdCell;
 }
 
 @end

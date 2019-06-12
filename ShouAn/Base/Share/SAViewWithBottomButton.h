@@ -13,11 +13,13 @@ typedef void(^ConfirmButtonClickedBlock)(void);
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SAViewWithBottomButton : SAView
+@interface SAViewWithBottomButton : SAView <UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 
 @property (nonatomic, copy) ConfirmButtonClickedBlock confirmButtonClickedBlock;
+
+@property (nonatomic, copy) NSArray *dataSource;
 
 @end
 

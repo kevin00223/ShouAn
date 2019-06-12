@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7A45327B15EFE9B2163087BF /* libPods-ShouAn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3639F09083C942D12A8D87 /* libPods-ShouAn.a */; };
+		A20D382B22B135530090321D /* SAChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D382A22B135530090321D /* SAChangePwdViewController.m */; };
+		A20D382E22B135790090321D /* SAChangePwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D382D22B135790090321D /* SAChangePwdView.m */; };
+		A20D383122B136E80090321D /* SABaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D383022B136E80090321D /* SABaseTableViewCell.m */; };
 		A215EBB422AFE05A006AAB1C /* SAStudentInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */; };
 		A215EBB722AFE13B006AAB1C /* SAStudentInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB622AFE13B006AAB1C /* SAStudentInfoView.m */; };
-		A215EBBA22AFE520006AAB1C /* SAStudentInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB922AFE520006AAB1C /* SAStudentInfoCell.m */; };
 		A215EBCB22B00033006AAB1C /* SAMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBCA22B00033006AAB1C /* SAMineViewController.m */; };
 		A215EBCE22B00040006AAB1C /* SAMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBCD22B00040006AAB1C /* SAMessageViewController.m */; };
 		A215EBD122B0004B006AAB1C /* SASearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBD022B0004B006AAB1C /* SASearchViewController.m */; };
@@ -35,12 +37,16 @@
 
 /* Begin PBXFileReference section */
 		3C36135E39BBBDB76EB28B27 /* Pods-ShouAn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShouAn.release.xcconfig"; path = "Target Support Files/Pods-ShouAn/Pods-ShouAn.release.xcconfig"; sourceTree = "<group>"; };
+		A20D382922B135530090321D /* SAChangePwdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAChangePwdViewController.h; sourceTree = "<group>"; };
+		A20D382A22B135530090321D /* SAChangePwdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAChangePwdViewController.m; sourceTree = "<group>"; };
+		A20D382C22B135790090321D /* SAChangePwdView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAChangePwdView.h; sourceTree = "<group>"; };
+		A20D382D22B135790090321D /* SAChangePwdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAChangePwdView.m; sourceTree = "<group>"; };
+		A20D382F22B136E80090321D /* SABaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SABaseTableViewCell.h; sourceTree = "<group>"; };
+		A20D383022B136E80090321D /* SABaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SABaseTableViewCell.m; sourceTree = "<group>"; };
 		A215EBB222AFE05A006AAB1C /* SAStudentInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoViewController.h; sourceTree = "<group>"; };
 		A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAStudentInfoViewController.m; sourceTree = "<group>"; };
 		A215EBB522AFE13B006AAB1C /* SAStudentInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoView.h; sourceTree = "<group>"; };
 		A215EBB622AFE13B006AAB1C /* SAStudentInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAStudentInfoView.m; sourceTree = "<group>"; };
-		A215EBB822AFE520006AAB1C /* SAStudentInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoCell.h; sourceTree = "<group>"; };
-		A215EBB922AFE520006AAB1C /* SAStudentInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAStudentInfoCell.m; sourceTree = "<group>"; };
 		A215EBC922B00033006AAB1C /* SAMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMineViewController.h; sourceTree = "<group>"; };
 		A215EBCA22B00033006AAB1C /* SAMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMineViewController.m; sourceTree = "<group>"; };
 		A215EBCC22B00040006AAB1C /* SAMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMessageViewController.h; sourceTree = "<group>"; };
@@ -156,6 +162,8 @@
 			children = (
 				A215EBC922B00033006AAB1C /* SAMineViewController.h */,
 				A215EBCA22B00033006AAB1C /* SAMineViewController.m */,
+				A20D382922B135530090321D /* SAChangePwdViewController.h */,
+				A20D382A22B135530090321D /* SAChangePwdViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -302,6 +310,8 @@
 				A2AE4FBE22AF914E001DBEAA /* SAView.m */,
 				A2AE4FE922B0F8DF001DBEAA /* SAViewWithBottomButton.h */,
 				A2AE4FEA22B0F8DF001DBEAA /* SAViewWithBottomButton.m */,
+				A20D382F22B136E80090321D /* SABaseTableViewCell.h */,
+				A20D383022B136E80090321D /* SABaseTableViewCell.m */,
 			);
 			path = Share;
 			sourceTree = "<group>";
@@ -340,8 +350,6 @@
 				A2AE4FDA22AFA457001DBEAA /* SAContentView.m */,
 				A215EBB522AFE13B006AAB1C /* SAStudentInfoView.h */,
 				A215EBB622AFE13B006AAB1C /* SAStudentInfoView.m */,
-				A215EBB822AFE520006AAB1C /* SAStudentInfoCell.h */,
-				A215EBB922AFE520006AAB1C /* SAStudentInfoCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -367,6 +375,8 @@
 		A2AE4FEC22B105B2001DBEAA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A20D382C22B135790090321D /* SAChangePwdView.h */,
+				A20D382D22B135790090321D /* SAChangePwdView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -471,7 +481,6 @@
 				A2AE4FAD22AF824B001DBEAA /* SANavigationController.m in Sources */,
 				A215EBD722B00491006AAB1C /* SAHomeViewController.m in Sources */,
 				A215EBD122B0004B006AAB1C /* SASearchViewController.m in Sources */,
-				A215EBBA22AFE520006AAB1C /* SAStudentInfoCell.m in Sources */,
 				A2AE4FD822AFA3AA001DBEAA /* SARegisterChildViewController.m in Sources */,
 				A2AE4FB322AF828C001DBEAA /* SABaseViewController.m in Sources */,
 				A2AE4FDB22AFA457001DBEAA /* SAContentView.m in Sources */,
@@ -479,13 +488,16 @@
 				A2AE4FE822B0A89C001DBEAA /* UIButton+SACustomButton.m in Sources */,
 				A215EBB422AFE05A006AAB1C /* SAStudentInfoViewController.m in Sources */,
 				A215EBB722AFE13B006AAB1C /* SAStudentInfoView.m in Sources */,
+				A20D382B22B135530090321D /* SAChangePwdViewController.m in Sources */,
 				A2AE4FC422AF9198001DBEAA /* SATabView.m in Sources */,
 				A2AE4F9B22AF755D001DBEAA /* main.m in Sources */,
 				A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */,
 				A2AE4FD222AFA32D001DBEAA /* SALoginChildViewController.m in Sources */,
 				A215EBCE22B00040006AAB1C /* SAMessageViewController.m in Sources */,
+				A20D383122B136E80090321D /* SABaseTableViewCell.m in Sources */,
 				A2AE4FEB22B0F8DF001DBEAA /* SAViewWithBottomButton.m in Sources */,
 				A215EBCB22B00033006AAB1C /* SAMineViewController.m in Sources */,
+				A20D382E22B135790090321D /* SAChangePwdView.m in Sources */,
 				A2AE4FB022AF8277001DBEAA /* SATabBarController.m in Sources */,
 				A2AE4FCB22AFA063001DBEAA /* UIView+SAExtension.m in Sources */,
 			);

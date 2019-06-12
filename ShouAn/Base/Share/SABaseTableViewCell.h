@@ -1,8 +1,8 @@
 //
-//  SAStudentInfoCell.h
+//  SABaseTableViewCell.h
 //  ShouAn
 //
-//  Created by 李凯 on 2019/6/11.
+//  Created by 李凯 on 2019/6/12.
 //  Copyright © 2019 LK. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SAStudentInfoCell : UITableViewCell
+@interface SABaseTableViewCell : UITableViewCell
 
 @property (nonatomic, strong) UILabel *titleLabel;
 

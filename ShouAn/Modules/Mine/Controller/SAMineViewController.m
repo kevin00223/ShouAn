@@ -7,6 +7,7 @@
 //
 
 #import "SAMineViewController.h"
+#import "SAChangePwdViewController.h"
 
 static NSString *mineCellID = @"mineCell";
 
@@ -113,7 +114,7 @@ static NSString *mineCellID = @"mineCell";
             NSLog(@"信息");
             break;
         case 1:
-            NSLog(@"密码");
+            [self.navigationController pushViewController:[SAChangePwdViewController new] animated:YES];
             break;
         case 2:
             NSLog(@"关于");

@@ -13,6 +13,8 @@
 
 @property (nonatomic, strong) SAStudentInfoView *studentInfoView;
 
+@property (nonatomic, copy) NSArray *studentInfoArray;
+
 @end
 
 @implementation SAStudentInfoViewController
@@ -48,8 +50,16 @@
 - (SAStudentInfoView *)studentInfoView {
     if (!_studentInfoView) {
         _studentInfoView = [[SAStudentInfoView alloc]init];
+        _studentInfoView.dataSource = self.studentInfoArray;
     }
     return _studentInfoView;
+}
+
+- (NSArray *)studentInfoArray {
+    if (!_studentInfoArray) {
+        _studentInfoArray = @[@"学生姓名:", @"学生学号:", @"学生性别:", @"学生班级:", @"您的姓名:", @"您的电话:", @"与学生关系:", @"第二联系人:", @"与学生关系:", @"第二联系电话:"];
+    }
+    return _studentInfoArray;
 }
 
 @end

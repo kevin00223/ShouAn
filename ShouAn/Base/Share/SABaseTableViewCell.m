@@ -1,14 +1,14 @@
 //
-//  SAStudentInfoCell.m
+//  SABaseTableViewCell.m
 //  ShouAn
 //
-//  Created by 李凯 on 2019/6/11.
+//  Created by 李凯 on 2019/6/12.
 //  Copyright © 2019 LK. All rights reserved.
 //
 
-#import "SAStudentInfoCell.h"
+#import "SABaseTableViewCell.h"
 
-@interface SAStudentInfoCell ()
+@interface SABaseTableViewCell ()
 
 @property (nonatomic, strong) UITextField *infoTextField;
 
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation SAStudentInfoCell
+@implementation SABaseTableViewCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];

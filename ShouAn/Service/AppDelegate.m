@@ -24,7 +24,7 @@
     self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
     SANavigationController *loginNav = [[SANavigationController alloc]initWithRootViewController:[[SALoginViewController alloc] init]];
     SATabBarController *tabBarVC = [[SATabBarController alloc]init];
-    self.window.rootViewController = loginNav;
+    self.window.rootViewController = tabBarVC;
     [self.window makeKeyAndVisible];
     
     return YES;
