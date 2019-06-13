@@ -7,7 +7,7 @@
 //
 
 #import "SASettingView.h"
-#import "SABaseTableViewCell.h"
+#import "SABaseCell.h"
 
 static NSString *settingCellID = @"settingCell";
 
@@ -16,7 +16,7 @@ static NSString *settingCellID = @"settingCell";
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self.tableView registerClass:[SABaseTableViewCell class] forCellReuseIdentifier:settingCellID];
+        [self.tableView registerClass:[SABaseCell class] forCellReuseIdentifier:settingCellID];
     }
     return self;
 }
@@ -27,12 +27,8 @@ static NSString *settingCellID = @"settingCell";
     [self.tableView reloadData];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dataSource.count;
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    SABaseTableViewCell *settingCell = [tableView dequeueReusableCellWithIdentifier:settingCellID forIndexPath:indexPath];
+    SABaseCell *settingCell = [tableView dequeueReusableCellWithIdentifier:settingCellID forIndexPath:indexPath];
     settingCell.titleLabel.text = self.dataSource[indexPath.row];
     settingCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return settingCell;

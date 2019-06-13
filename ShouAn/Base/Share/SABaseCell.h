@@ -1,8 +1,8 @@
 //
-//  SABaseTableViewCell.h
+//  SABaseCell.h
 //  ShouAn
 //
-//  Created by 李凯 on 2019/6/12.
+//  Created by 李凯 on 2019/6/13.
 //  Copyright © 2019 LK. All rights reserved.
 //
 
@@ -10,9 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SABaseTableViewCell : UITableViewCell
+@interface SABaseCell : UITableViewCell
 
 @property (nonatomic, strong) UILabel *titleLabel;
+
+- (void)initSubviews;
 
 @end
 

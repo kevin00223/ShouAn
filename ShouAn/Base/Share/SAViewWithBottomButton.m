@@ -7,6 +7,9 @@
 //
 
 #import "SAViewWithBottomButton.h"
+#import "SATextFieldCell.h"
+
+//static NSString *cellID = @"cellID";
 
 @interface SAViewWithBottomButton ()
 
@@ -57,6 +60,12 @@
 
 - (void)panGesture: (UIGestureRecognizer *)panGesture {
     [self.tableView endEditing:YES];
+}
+
+#pragma mark - tableview datasource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataSource.count;
 }
 
 #pragma mark - lazy loading

@@ -10,7 +10,7 @@
 		7A45327B15EFE9B2163087BF /* libPods-ShouAn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3639F09083C942D12A8D87 /* libPods-ShouAn.a */; };
 		A20D382B22B135530090321D /* SAChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D382A22B135530090321D /* SAChangePwdViewController.m */; };
 		A20D382E22B135790090321D /* SAChangePwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D382D22B135790090321D /* SAChangePwdView.m */; };
-		A20D383122B136E80090321D /* SABaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D383022B136E80090321D /* SABaseTableViewCell.m */; };
+		A20D383122B136E80090321D /* SATextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D383022B136E80090321D /* SATextFieldCell.m */; };
 		A20D383422B142800090321D /* SAAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D383322B142800090321D /* SAAboutUsViewController.m */; };
 		A20D383722B14F130090321D /* SASettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D383622B14F130090321D /* SASettingViewController.m */; };
 		A20D383A22B14F5F0090321D /* SASettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D383922B14F5F0090321D /* SASettingView.m */; };
@@ -37,6 +37,7 @@
 		A2AE4FDB22AFA457001DBEAA /* SAContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FDA22AFA457001DBEAA /* SAContentView.m */; };
 		A2AE4FE822B0A89C001DBEAA /* UIButton+SACustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FE722B0A89C001DBEAA /* UIButton+SACustomButton.m */; };
 		A2AE4FEB22B0F8DF001DBEAA /* SAViewWithBottomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FEA22B0F8DF001DBEAA /* SAViewWithBottomButton.m */; };
+		A2AE4FEF22B1E764001DBEAA /* SABaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4FEE22B1E764001DBEAA /* SABaseCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,8 +46,8 @@
 		A20D382A22B135530090321D /* SAChangePwdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAChangePwdViewController.m; sourceTree = "<group>"; };
 		A20D382C22B135790090321D /* SAChangePwdView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAChangePwdView.h; sourceTree = "<group>"; };
 		A20D382D22B135790090321D /* SAChangePwdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAChangePwdView.m; sourceTree = "<group>"; };
-		A20D382F22B136E80090321D /* SABaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SABaseTableViewCell.h; sourceTree = "<group>"; };
-		A20D383022B136E80090321D /* SABaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SABaseTableViewCell.m; sourceTree = "<group>"; };
+		A20D382F22B136E80090321D /* SATextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SATextFieldCell.h; sourceTree = "<group>"; };
+		A20D383022B136E80090321D /* SATextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SATextFieldCell.m; sourceTree = "<group>"; };
 		A20D383222B142800090321D /* SAAboutUsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAAboutUsViewController.h; sourceTree = "<group>"; };
 		A20D383322B142800090321D /* SAAboutUsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAAboutUsViewController.m; sourceTree = "<group>"; };
 		A20D383522B14F130090321D /* SASettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SASettingViewController.h; sourceTree = "<group>"; };
@@ -100,6 +101,8 @@
 		A2AE4FE722B0A89C001DBEAA /* UIButton+SACustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SACustomButton.m"; sourceTree = "<group>"; };
 		A2AE4FE922B0F8DF001DBEAA /* SAViewWithBottomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAViewWithBottomButton.h; sourceTree = "<group>"; };
 		A2AE4FEA22B0F8DF001DBEAA /* SAViewWithBottomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAViewWithBottomButton.m; sourceTree = "<group>"; };
+		A2AE4FED22B1E764001DBEAA /* SABaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SABaseCell.h; sourceTree = "<group>"; };
+		A2AE4FEE22B1E764001DBEAA /* SABaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SABaseCell.m; sourceTree = "<group>"; };
 		DE3639F09083C942D12A8D87 /* libPods-ShouAn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShouAn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E993A96181A20CD49670007B /* Pods-ShouAn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShouAn.debug.xcconfig"; path = "Target Support Files/Pods-ShouAn/Pods-ShouAn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -328,8 +331,10 @@
 				A2AE4FBE22AF914E001DBEAA /* SAView.m */,
 				A2AE4FE922B0F8DF001DBEAA /* SAViewWithBottomButton.h */,
 				A2AE4FEA22B0F8DF001DBEAA /* SAViewWithBottomButton.m */,
-				A20D382F22B136E80090321D /* SABaseTableViewCell.h */,
-				A20D383022B136E80090321D /* SABaseTableViewCell.m */,
+				A20D382F22B136E80090321D /* SATextFieldCell.h */,
+				A20D383022B136E80090321D /* SATextFieldCell.m */,
+				A2AE4FED22B1E764001DBEAA /* SABaseCell.h */,
+				A2AE4FEE22B1E764001DBEAA /* SABaseCell.m */,
 			);
 			path = Share;
 			sourceTree = "<group>";
@@ -511,6 +516,7 @@
 				A20D384022B1582D0090321D /* SAFeedbackViewController.m in Sources */,
 				A215EBB722AFE13B006AAB1C /* SAStudentInfoView.m in Sources */,
 				A20D382B22B135530090321D /* SAChangePwdViewController.m in Sources */,
+				A2AE4FEF22B1E764001DBEAA /* SABaseCell.m in Sources */,
 				A2AE4FC422AF9198001DBEAA /* SATabView.m in Sources */,
 				A20D383722B14F130090321D /* SASettingViewController.m in Sources */,
 				A2AE4F9B22AF755D001DBEAA /* main.m in Sources */,
@@ -518,7 +524,7 @@
 				A20D383A22B14F5F0090321D /* SASettingView.m in Sources */,
 				A2AE4FD222AFA32D001DBEAA /* SALoginChildViewController.m in Sources */,
 				A215EBCE22B00040006AAB1C /* SAMessageViewController.m in Sources */,
-				A20D383122B136E80090321D /* SABaseTableViewCell.m in Sources */,
+				A20D383122B136E80090321D /* SATextFieldCell.m in Sources */,
 				A2AE4FEB22B0F8DF001DBEAA /* SAViewWithBottomButton.m in Sources */,
 				A215EBCB22B00033006AAB1C /* SAMineViewController.m in Sources */,
 				A20D382E22B135790090321D /* SAChangePwdView.m in Sources */,
