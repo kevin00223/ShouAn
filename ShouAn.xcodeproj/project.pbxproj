@@ -42,7 +42,7 @@
 		A2AE502422B220FF001DBEAA /* Message.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2AE502322B220FF001DBEAA /* Message.plist */; };
 		A2AE502822B22279001DBEAA /* SAMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE502722B22279001DBEAA /* SAMessageModel.m */; };
 		A2AE505022B232F9001DBEAA /* SARoundCornerShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE504F22B232F9001DBEAA /* SARoundCornerShadowView.m */; };
-		A2AE505622B24C79001DBEAA /* SANoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE505522B24C79001DBEAA /* SANoticeViewController.m */; };
+		A2AE505622B24C79001DBEAA /* SABaseNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE505522B24C79001DBEAA /* SABaseNoticeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,8 +115,8 @@
 		A2AE502722B22279001DBEAA /* SAMessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMessageModel.m; sourceTree = "<group>"; };
 		A2AE504E22B232F9001DBEAA /* SARoundCornerShadowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SARoundCornerShadowView.h; sourceTree = "<group>"; };
 		A2AE504F22B232F9001DBEAA /* SARoundCornerShadowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SARoundCornerShadowView.m; sourceTree = "<group>"; };
-		A2AE505422B24C79001DBEAA /* SANoticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SANoticeViewController.h; sourceTree = "<group>"; };
-		A2AE505522B24C79001DBEAA /* SANoticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SANoticeViewController.m; sourceTree = "<group>"; };
+		A2AE505422B24C79001DBEAA /* SABaseNoticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SABaseNoticeViewController.h; sourceTree = "<group>"; };
+		A2AE505522B24C79001DBEAA /* SABaseNoticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SABaseNoticeViewController.m; sourceTree = "<group>"; };
 		DE3639F09083C942D12A8D87 /* libPods-ShouAn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShouAn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E993A96181A20CD49670007B /* Pods-ShouAn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShouAn.debug.xcconfig"; path = "Target Support Files/Pods-ShouAn/Pods-ShouAn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -346,8 +346,8 @@
 				A2AE4FEE22B1E764001DBEAA /* SABaseCell.m */,
 				A2AE504E22B232F9001DBEAA /* SARoundCornerShadowView.h */,
 				A2AE504F22B232F9001DBEAA /* SARoundCornerShadowView.m */,
-				A2AE505422B24C79001DBEAA /* SANoticeViewController.h */,
-				A2AE505522B24C79001DBEAA /* SANoticeViewController.m */,
+				A2AE505422B24C79001DBEAA /* SABaseNoticeViewController.h */,
+				A2AE505522B24C79001DBEAA /* SABaseNoticeViewController.m */,
 			);
 			path = Share;
 			sourceTree = "<group>";
@@ -559,7 +559,7 @@
 				A215EBB722AFE13B006AAB1C /* SAStudentInfoView.m in Sources */,
 				A20D382B22B135530090321D /* SAChangePwdViewController.m in Sources */,
 				A2AE4FEF22B1E764001DBEAA /* SABaseCell.m in Sources */,
-				A2AE505622B24C79001DBEAA /* SANoticeViewController.m in Sources */,
+				A2AE505622B24C79001DBEAA /* SABaseNoticeViewController.m in Sources */,
 				A2AE4FC422AF9198001DBEAA /* SATabView.m in Sources */,
 				A2AE502122B22011001DBEAA /* SAMessageCell.m in Sources */,
 				A20D383722B14F130090321D /* SASettingViewController.m in Sources */,

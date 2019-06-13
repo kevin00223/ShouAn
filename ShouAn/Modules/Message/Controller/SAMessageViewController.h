@@ -6,11 +6,11 @@
 //  Copyright © 2019 LK. All rights reserved.
 //
 
-#import "SANoticeViewController.h"
+#import "SABaseNoticeViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SAMessageViewController : SANoticeViewController
+@interface SAMessageViewController : SABaseNoticeViewController
 
 @end
 

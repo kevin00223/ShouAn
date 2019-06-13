@@ -8,7 +8,7 @@
 
 #import "SAHomeViewController.h"
 #import "UIButton+SACustomButton.h"
-#import "SANoticeViewController.h"
+//#import "SANoticeViewController.h"
 
 #define kTopViewHeight 262
 #define kMargin 10
@@ -103,7 +103,7 @@ typedef enum {
 - (void)gridButtonClicked: (UIButton *)gridButton {
     switch (gridButton.tag) {
         case SAHomeGridTypeNotice:
-            [self.navigationController pushViewController:[SANoticeViewController new] animated:YES];
+//            [self.navigationController pushViewController:[SANoticeViewController new] animated:YES];
             break;
         case SAHomeGridTypeHomework:
             NSLog(@"homework");

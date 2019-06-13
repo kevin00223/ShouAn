@@ -1,5 +1,5 @@
 //
-//  SANoticeViewController.h
+//  SABaseNoticeViewController.h
 //  ShouAn
 //
 //  Created by 李凯 on 2019/6/13.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SANoticeViewController : SABaseViewController
+@interface SABaseNoticeViewController : SABaseViewController
 
 @property (nonatomic, strong) UITableView *tableView;
 

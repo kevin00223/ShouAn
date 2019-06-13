@@ -1,18 +1,18 @@
 //
-//  SANoticeViewController.m
+//  SABaseNoticeViewController.m
 //  ShouAn
 //
 //  Created by 李凯 on 2019/6/13.
 //  Copyright © 2019 LK. All rights reserved.
 //
 
-#import "SANoticeViewController.h"
+#import "SABaseNoticeViewController.h"
 
-@interface SANoticeViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface SABaseNoticeViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
 
-@implementation SANoticeViewController
+@implementation SABaseNoticeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
