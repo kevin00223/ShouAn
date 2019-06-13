@@ -7,8 +7,16 @@
 //
 
 #import "SAMessageViewController.h"
+#import "SAMessageCell.h"
+#import "SAMessageModel.h"
 
-@interface SAMessageViewController ()
+static NSString *messageCellID = @"messageCellID";
+
+@interface SAMessageViewController () <UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView *tableView;
+
+@property (nonatomic, copy) NSArray *dataSource;
 
 @end
 
@@ -17,16 +25,51 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self initValues];
+    [self initSubviews];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)initValues {
+    self.title = @"消息";
 }
-*/
+
+- (void)initSubviews {
+    [self.view addSubview:self.tableView];
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataSource.count;
+}
+
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//}
+
+#pragma mark - lazy loading
+
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _tableView.dataSource = self;
+        [_tableView registerClass:[SAMessageCell class] forCellReuseIdentifier:messageCellID];
+    }
+    return _tableView;
+}
+
+- (NSArray *)dataSource {
+    if (!_dataSource) {
+        _dataSource = [SAMessageModel messageModelWithPlistName:@"Message.plist"];
+    }
+    return _dataSource;
+}
 
 @end

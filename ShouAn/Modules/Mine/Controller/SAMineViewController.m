@@ -11,20 +11,17 @@
 #import "SAAboutUsViewController.h"
 #import "SASettingViewController.h"
 #import "SABaseCell.h"
+#import "SARoundCornerShadowView.h"
 
 static NSString *mineCellID = @"mineCell";
 
 @interface SAMineViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
-
 @property (nonatomic, strong) UIView *topContainerView;
 @property (nonatomic, strong) UIView *topGreenView;
-@property (nonatomic, strong) UIView *topInfoView;
+@property (nonatomic, strong) SARoundCornerShadowView *shadowView;
 @property (nonatomic, strong) UIImageView *topIcon;
-
-@property (nonatomic, strong) UIView *shadowView;
-
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UILabel *subTitleLabel;
 
@@ -43,13 +40,11 @@ static NSString *mineCellID = @"mineCell";
 - (void)initSubviews {
     
     [self.view addSubview:self.tableView];
-    
     [self.topContainerView addSubview:self.topGreenView];
     [self.topContainerView addSubview:self.shadowView];
-    [self.shadowView addSubview:self.topInfoView];
     [self.topContainerView addSubview:self.topIcon];
-    [self.topInfoView addSubview:self.titleLabel];
-    [self.topInfoView addSubview:self.subTitleLabel];
+    [self.shadowView addSubview:self.titleLabel];
+    [self.shadowView addSubview:self.subTitleLabel];
     
     self.tableView.tableHeaderView = self.topContainerView;
 }
@@ -72,10 +67,6 @@ static NSString *mineCellID = @"mineCell";
         make.right.equalTo(self.view).offset(-10);
         make.height.offset(130);
     }];
-    
-    [self.topInfoView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.shadowView);
-    }];
 
     [self.topIcon mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.topContainerView);
@@ -83,13 +74,13 @@ static NSString *mineCellID = @"mineCell";
     }];
     
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.topInfoView).offset(60);
-        make.centerX.equalTo(self.topInfoView);
+        make.top.equalTo(self.shadowView).offset(60);
+        make.centerX.equalTo(self.shadowView);
     }];
     
     [self.subTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.titleLabel.mas_bottom).offset(10);
-        make.centerX.equalTo(self.topInfoView);
+        make.centerX.equalTo(self.shadowView);
     }];
 }
 
@@ -160,14 +151,16 @@ static NSString *mineCellID = @"mineCell";
     return _topGreenView;
 }
 
-- (UIView *)topInfoView {
-    if (!_topInfoView) {
-        _topInfoView = [[UIView alloc]init];
-        _topInfoView.backgroundColor = [UIColor whiteColor];
-        _topInfoView.layer.cornerRadius = 8.0;
-        _topInfoView.layer.masksToBounds = YES;
+- (SARoundCornerShadowView *)shadowView {
+    if (!_shadowView) {
+        _shadowView = [[SARoundCornerShadowView alloc]initWithFrame:CGRectZero];
+        _shadowView.shadowColor = [UIColor lightGrayColor];
+        _shadowView.shadowRadius = 8.0;
+        _shadowView.shadowOpacity = 0.3;
+        _shadowView.shadowOffset = CGSizeMake(5, 5);
+        _shadowView.cornerRadius = 8.0;
     }
-    return _topInfoView;
+    return _shadowView;
 }
 
 - (UIImageView *)topIcon {
@@ -175,19 +168,6 @@ static NSString *mineCellID = @"mineCell";
         _topIcon = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"icon"]];
     }
     return _topIcon;
-}
-
-- (UIView *)shadowView {
-    if (!_shadowView) {
-        _shadowView = [[UIView alloc]init];
-        _shadowView.layer.shadowColor = [UIColor lightGrayColor].CGColor;
-        _shadowView.layer.shadowOffset = CGSizeMake(5, 5);
-        _shadowView.layer.shadowOpacity = 0.3;
-        _shadowView.layer.shadowRadius = 8.0;
-        _shadowView.layer.cornerRadius = 8.0;
-        _shadowView.clipsToBounds = NO;
-    }
-    return _shadowView;
 }
 
 - (UILabel *)titleLabel {

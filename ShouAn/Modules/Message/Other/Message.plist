@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>content</key>
+		<string>您好，王月月妈妈，王月月同学的事假2019/05/20 08:00-2019/05/20  18:00已审批成功</string>
+		<key>time</key>
+		<string>2019-05-26</string>
+		<key>image</key>
+		<string>messageIcon</string>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>您好，王月月妈妈，王月月同学月考成绩已出来，你可以搜索查看。</string>
+		<key>time</key>
+		<string>2019-05-26</string>
+		<key>image</key>
+		<string>messageIcon</string>
+	</dict>
+</array>
+</plist>

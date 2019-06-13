@@ -7,6 +7,7 @@
 //
 
 #import "SAAboutUsViewController.h"
+#import "SARoundCornerShadowView.h"
 
 @interface SAAboutUsViewController ()
 
@@ -14,9 +15,7 @@
 
 @property (nonatomic, strong) UILabel *titleLabel;
 
-@property (nonatomic, strong) UIView *shadowView;
-
-@property (nonatomic, strong) UIView *containerView;
+@property (nonatomic, strong) SARoundCornerShadowView *shadowView;
 
 @property (nonatomic, strong) UILabel *aboutUsLabel;
 
@@ -43,8 +42,7 @@
     [self.view addSubview:self.iconView];
     [self.view addSubview:self.titleLabel];
     [self.view addSubview:self.shadowView];
-    [self.view addSubview:self.containerView];
-    [self.containerView addSubview:self.aboutUsLabel];
+    [self.shadowView addSubview:self.aboutUsLabel];
     [self.view addSubview:self.contactLabel];
 }
 
@@ -68,15 +66,11 @@
         make.height.offset(150);
     }];
     
-    [self.containerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.shadowView);
-    }];
-    
     [self.aboutUsLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.containerView).offset(20);
-        make.right.equalTo(self.containerView).offset(-20);
-        make.top.equalTo(self.containerView).offset(30);
-        make.bottom.equalTo(self.containerView).offset(-30);
+        make.left.equalTo(self.shadowView).offset(20);
+        make.right.equalTo(self.shadowView).offset(-20);
+        make.top.equalTo(self.shadowView).offset(30);
+        make.bottom.equalTo(self.shadowView).offset(-30);
     }];
     
     [self.contactLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -108,26 +102,14 @@
 
 - (UIView *)shadowView {
     if (!_shadowView) {
-        _shadowView = [[UIView alloc]init];
-        _shadowView.backgroundColor = [UIColor whiteColor];
-        _shadowView.layer.shadowColor = [UIColor lightGrayColor].CGColor;
-        _shadowView.layer.shadowOffset = CGSizeMake(5, 5);
-        _shadowView.layer.shadowOpacity = 0.3;
-        _shadowView.layer.shadowRadius = 8.0;
-        _shadowView.layer.cornerRadius = 8.0;
-        _shadowView.clipsToBounds = NO;
+        _shadowView = [[SARoundCornerShadowView alloc]init];
+        _shadowView.shadowColor = [UIColor lightGrayColor];
+        _shadowView.shadowRadius = 8.0;
+        _shadowView.shadowOpacity = 0.3;
+        _shadowView.shadowOffset = CGSizeMake(5, 5);
+        _shadowView.cornerRadius = 8.0;
     }
     return _shadowView;
-}
-
-- (UIView *)containerView {
-    if (!_containerView) {
-        _containerView = [[UIView alloc]init];
-        _containerView.backgroundColor = [UIColor whiteColor];
-        _containerView.layer.cornerRadius = 8.0;
-        _containerView.layer.masksToBounds = YES;
-    }
-    return _containerView;
 }
 
 - (UILabel *)aboutUsLabel {
