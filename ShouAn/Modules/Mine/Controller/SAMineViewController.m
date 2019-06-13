@@ -10,6 +10,7 @@
 #import "SAChangePwdViewController.h"
 #import "SAAboutUsViewController.h"
 #import "SASettingViewController.h"
+#import "SABaseCell.h"
 
 static NSString *mineCellID = @"mineCell";
 
@@ -36,7 +37,6 @@ static NSString *mineCellID = @"mineCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor lightGrayColor];
     [self initSubviews];
 }
 
@@ -100,10 +100,10 @@ static NSString *mineCellID = @"mineCell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:mineCellID forIndexPath:indexPath];
-    cell.textLabel.text = self.dataSource[indexPath.row];
-    cell.textLabel.textColor = SAHexColor(0x323232);
-    cell.textLabel.font = [UIFont systemFontOfSize:15];
+    SABaseCell *cell = [tableView dequeueReusableCellWithIdentifier:mineCellID forIndexPath:indexPath];
+    cell.titleLabel.text = self.dataSource[indexPath.row];
+    cell.titleLabel.textColor = SAHexColor(0x323232);
+    cell.titleLabel.font = [UIFont systemFontOfSize:15];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
@@ -134,7 +134,8 @@ static NSString *mineCellID = @"mineCell";
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
-        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:mineCellID];
+        [_tableView registerClass:[SABaseCell class] forCellReuseIdentifier:mineCellID];
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.scrollEnabled = NO;
         _tableView.delegate = self;
         _tableView.dataSource = self;

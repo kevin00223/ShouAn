@@ -27,6 +27,10 @@
 - (void)initSubviews {
     [self.contentView addSubview:self.titleLabel];
     [self.contentView addSubview:self.sepratorLine];
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
     
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.contentView);
@@ -39,21 +43,6 @@
         make.height.offset(1/[UIScreen mainScreen].scale);
     }];
 }
-
-//- (void)layoutSubviews {
-//    [super layoutSubviews];
-//    
-//    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.centerY.equalTo(self.contentView);
-//        make.left.equalTo(self.contentView).offset(15);
-//        make.width.offset(100);
-//    }];
-//    
-//    [self.sepratorLine mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.bottom.right.equalTo(self.contentView);
-//        make.height.offset(1/[UIScreen mainScreen].scale);
-//    }];
-//}
 
 #pragma mark - lazy loading
 
