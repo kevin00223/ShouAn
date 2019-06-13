@@ -12,7 +12,7 @@
 
 static NSString *messageCellID = @"messageCellID";
 
-@interface SAMessageViewController () <UITableViewDataSource>
+@interface SAMessageViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -50,9 +50,16 @@ static NSString *messageCellID = @"messageCellID";
     return self.dataSource.count;
 }
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    
-//}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    SAMessageCell *messageCell = [tableView dequeueReusableCellWithIdentifier:messageCellID forIndexPath:indexPath];
+    messageCell.messageModel = self.dataSource[indexPath.row];
+    messageCell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return messageCell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 130;
+}
 
 #pragma mark - lazy loading
 
@@ -60,6 +67,8 @@ static NSString *messageCellID = @"messageCellID";
     if (!_tableView) {
         _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.dataSource = self;
+        _tableView.delegate = self;
+        _tableView.tableFooterView = [UIView new];
         [_tableView registerClass:[SAMessageCell class] forCellReuseIdentifier:messageCellID];
     }
     return _tableView;
