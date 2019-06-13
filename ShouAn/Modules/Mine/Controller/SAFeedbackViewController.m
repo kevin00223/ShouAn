@@ -32,6 +32,9 @@
 - (void)initSubviews {
     [self.view addSubview:self.textView];
     [self.view addSubview:self.confirmButton];
+    
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panGesture:)];
+    [self.view addGestureRecognizer:pan];
 }
 
 - (void)viewDidLayoutSubviews {
@@ -54,6 +57,10 @@
 
 - (void)confirmButtonClicked: (UIButton *)confirmButton {
     NSLog(@"点了确认-反馈页");
+}
+
+- (void)panGesture: (UIGestureRecognizer *)panGesture {
+    [self.view endEditing:YES];
 }
 
 - (UITextView *)textView {

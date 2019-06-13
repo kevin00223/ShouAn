@@ -9,7 +9,6 @@
 #import "SATabView.h"
 
 static CGFloat const indicatorH = 1;//指示器的高度
-static CGFloat const seperateW = 1; //分割线的宽度
 
 @interface SATabView ()
 

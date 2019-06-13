@@ -18,11 +18,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // 统一设置导航栏颜色
     [self.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
     [self.navigationBar setShadowImage:[[UIImage alloc] init]];
 
     [self.navigationBar setBarTintColor:SAGreenColor];
     self.navigationBar.translucent = NO;
+    
+    // 统一设置导航栏标题
+    [self.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18], NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
@@ -32,7 +36,7 @@
     
     [super pushViewController:viewController animated:animated];
     
-    // TODO: 通知设置返回按钮
+    // TODO: 统一设置返回按钮
 }
 
 @end
