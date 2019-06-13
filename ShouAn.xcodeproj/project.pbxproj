@@ -43,6 +43,8 @@
 		A2AE502822B22279001DBEAA /* SAMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE502722B22279001DBEAA /* SAMessageModel.m */; };
 		A2AE505022B232F9001DBEAA /* SARoundCornerShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE504F22B232F9001DBEAA /* SARoundCornerShadowView.m */; };
 		A2AE505622B24C79001DBEAA /* SABaseNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE505522B24C79001DBEAA /* SABaseNoticeViewController.m */; };
+		A2AE505922B24FD7001DBEAA /* SANoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE505822B24FD7001DBEAA /* SANoticeViewController.m */; };
+		A2AE505C22B2533D001DBEAA /* SANoticeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE505B22B2533D001DBEAA /* SANoticeCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +119,10 @@
 		A2AE504F22B232F9001DBEAA /* SARoundCornerShadowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SARoundCornerShadowView.m; sourceTree = "<group>"; };
 		A2AE505422B24C79001DBEAA /* SABaseNoticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SABaseNoticeViewController.h; sourceTree = "<group>"; };
 		A2AE505522B24C79001DBEAA /* SABaseNoticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SABaseNoticeViewController.m; sourceTree = "<group>"; };
+		A2AE505722B24FD7001DBEAA /* SANoticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SANoticeViewController.h; sourceTree = "<group>"; };
+		A2AE505822B24FD7001DBEAA /* SANoticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SANoticeViewController.m; sourceTree = "<group>"; };
+		A2AE505A22B2533D001DBEAA /* SANoticeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SANoticeCell.h; sourceTree = "<group>"; };
+		A2AE505B22B2533D001DBEAA /* SANoticeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SANoticeCell.m; sourceTree = "<group>"; };
 		DE3639F09083C942D12A8D87 /* libPods-ShouAn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShouAn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E993A96181A20CD49670007B /* Pods-ShouAn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShouAn.debug.xcconfig"; path = "Target Support Files/Pods-ShouAn/Pods-ShouAn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -210,6 +216,8 @@
 			children = (
 				A215EBD522B00491006AAB1C /* SAHomeViewController.h */,
 				A215EBD622B00491006AAB1C /* SAHomeViewController.m */,
+				A2AE505722B24FD7001DBEAA /* SANoticeViewController.h */,
+				A2AE505822B24FD7001DBEAA /* SANoticeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -404,6 +412,8 @@
 		A2AE4FE222B0A1F2001DBEAA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A2AE505A22B2533D001DBEAA /* SANoticeCell.h */,
+				A2AE505B22B2533D001DBEAA /* SANoticeCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -545,6 +555,7 @@
 				A2AE4FBC22AF8EF9001DBEAA /* SALoginViewController.m in Sources */,
 				A2AE4FAD22AF824B001DBEAA /* SANavigationController.m in Sources */,
 				A215EBD722B00491006AAB1C /* SAHomeViewController.m in Sources */,
+				A2AE505C22B2533D001DBEAA /* SANoticeCell.m in Sources */,
 				A215EBD122B0004B006AAB1C /* SASearchViewController.m in Sources */,
 				A2AE4FD822AFA3AA001DBEAA /* SARegisterChildViewController.m in Sources */,
 				A2AE4FB322AF828C001DBEAA /* SABaseViewController.m in Sources */,
@@ -560,6 +571,7 @@
 				A20D382B22B135530090321D /* SAChangePwdViewController.m in Sources */,
 				A2AE4FEF22B1E764001DBEAA /* SABaseCell.m in Sources */,
 				A2AE505622B24C79001DBEAA /* SABaseNoticeViewController.m in Sources */,
+				A2AE505922B24FD7001DBEAA /* SANoticeViewController.m in Sources */,
 				A2AE4FC422AF9198001DBEAA /* SATabView.m in Sources */,
 				A2AE502122B22011001DBEAA /* SAMessageCell.m in Sources */,
 				A20D383722B14F130090321D /* SASettingViewController.m in Sources */,
