@@ -78,7 +78,7 @@
 - (SARoundCornerShadowView *)shadowView {
     if (!_shadowView) {
         _shadowView = [[SARoundCornerShadowView alloc]initWithFrame:CGRectZero];
-        _shadowView.shadowColor = [UIColor lightGrayColor];
+        _shadowView.shadowColor = SAGreenColor;
         _shadowView.shadowRadius = 8.0;
         _shadowView.shadowOpacity = 0.3;
         _shadowView.shadowOffset = CGSizeMake(5, 5);

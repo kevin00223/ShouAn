@@ -1,0 +1,57 @@
+//
+//  SANoticeViewController.m
+//  ShouAn
+//
+//  Created by 李凯 on 2019/6/13.
+//  Copyright © 2019 LK. All rights reserved.
+//
+
+#import "SANoticeViewController.h"
+
+@interface SANoticeViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@end
+
+@implementation SANoticeViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    [self initSubviews];
+}
+
+- (void)initSubviews {
+    [self.view addSubview:self.tableView];
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+}
+
+- (void)setDataSource:(NSArray *)dataSource {
+    _dataSource = dataSource;
+    
+    [self.tableView reloadData];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataSource.count;
+}
+
+#pragma mark - lazy loading
+
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _tableView.dataSource = self;
+        _tableView.delegate = self;
+        _tableView.tableFooterView = [UIView new];
+    }
+    return _tableView;
+}
+
+@end
