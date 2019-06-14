@@ -23,6 +23,9 @@
 		A215EBD722B00491006AAB1C /* SAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBD622B00491006AAB1C /* SAHomeViewController.m */; };
 		A2AC60D022B343E800247689 /* Notice.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2AC60CF22B343E800247689 /* Notice.plist */; };
 		A2AC60D522B347DD00247689 /* SANoticeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60D422B347DD00247689 /* SANoticeModel.m */; };
+		A2AC60D822B378BD00247689 /* SASearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60D722B378BC00247689 /* SASearchCell.m */; };
+		A2AC60DA22B3864800247689 /* Search.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2AC60D922B3864800247689 /* Search.plist */; };
+		A2AC60DF22B387B700247689 /* SASearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60DE22B387B700247689 /* SASearchModel.m */; };
 		A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */; };
 		A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9422AF755D001DBEAA /* Assets.xcassets */; };
 		A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9622AF755D001DBEAA /* LaunchScreen.storyboard */; };
@@ -80,6 +83,11 @@
 		A2AC60CF22B343E800247689 /* Notice.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Notice.plist; sourceTree = "<group>"; };
 		A2AC60D322B347DD00247689 /* SANoticeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SANoticeModel.h; sourceTree = "<group>"; };
 		A2AC60D422B347DD00247689 /* SANoticeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SANoticeModel.m; sourceTree = "<group>"; };
+		A2AC60D622B378BC00247689 /* SASearchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SASearchCell.h; path = ShouAn/Modules/Home/Model/SASearchCell.h; sourceTree = SOURCE_ROOT; };
+		A2AC60D722B378BC00247689 /* SASearchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SASearchCell.m; path = ShouAn/Modules/Home/Model/SASearchCell.m; sourceTree = SOURCE_ROOT; };
+		A2AC60D922B3864800247689 /* Search.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Search.plist; sourceTree = "<group>"; };
+		A2AC60DD22B387B700247689 /* SASearchModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SASearchModel.h; sourceTree = "<group>"; };
+		A2AC60DE22B387B700247689 /* SASearchModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SASearchModel.m; sourceTree = "<group>"; };
 		A2AE4F8822AF755D001DBEAA /* ShouAn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShouAn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AE4F8B22AF755D001DBEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -175,6 +183,8 @@
 		A215EBBE22AFFFB2006AAB1C /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				A2AC60DC22B387A200247689 /* SearchModel */,
+				A2AC60DB22B3864E00247689 /* Other */,
 				A215EBC722B0001B006AAB1C /* Controller */,
 				A215EBC822B0001B006AAB1C /* View */,
 			);
@@ -250,6 +260,8 @@
 		A215EBC822B0001B006AAB1C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A2AC60D622B378BC00247689 /* SASearchCell.h */,
+				A2AC60D722B378BC00247689 /* SASearchCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -269,6 +281,23 @@
 				A2AC60D422B347DD00247689 /* SANoticeModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A2AC60DB22B3864E00247689 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A2AC60D922B3864800247689 /* Search.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		A2AC60DC22B387A200247689 /* SearchModel */ = {
+			isa = PBXGroup;
+			children = (
+				A2AC60DD22B387B700247689 /* SASearchModel.h */,
+				A2AC60DE22B387B700247689 /* SASearchModel.m */,
+			);
+			path = SearchModel;
 			sourceTree = "<group>";
 		};
 		A2AE4F7F22AF755D001DBEAA = {
@@ -541,6 +570,7 @@
 				A2AC60D022B343E800247689 /* Notice.plist in Resources */,
 				A2AE502422B220FF001DBEAA /* Message.plist in Resources */,
 				A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */,
+				A2AC60DA22B3864800247689 /* Search.plist in Resources */,
 				A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,9 +615,11 @@
 				A2AE4FD822AFA3AA001DBEAA /* SARegisterChildViewController.m in Sources */,
 				A2AE4FB322AF828C001DBEAA /* SABaseViewController.m in Sources */,
 				A2AE4FDB22AFA457001DBEAA /* SAContentView.m in Sources */,
+				A2AC60DF22B387B700247689 /* SASearchModel.m in Sources */,
 				A2AE4FBF22AF914E001DBEAA /* SAView.m in Sources */,
 				A2AE4FE822B0A89C001DBEAA /* UIButton+SACustomButton.m in Sources */,
 				A215EBB422AFE05A006AAB1C /* SAStudentInfoViewController.m in Sources */,
+				A2AC60D822B378BD00247689 /* SASearchCell.m in Sources */,
 				A20D383422B142800090321D /* SAAboutUsViewController.m in Sources */,
 				A2AE505022B232F9001DBEAA /* SARoundCornerShadowView.m in Sources */,
 				A2AE502822B22279001DBEAA /* SAMessageModel.m in Sources */,

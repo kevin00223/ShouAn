@@ -39,8 +39,8 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    return self.dataSource.count;
-    return 2;
+    return self.dataSource.count;
+//    return 4;
 }
 
 #pragma mark - lazy loading

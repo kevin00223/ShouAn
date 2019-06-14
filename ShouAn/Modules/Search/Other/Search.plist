@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>iconImage</key>
+		<string>attendance</string>
+		<key>title</key>
+		<string>考勤查询</string>
+		<key>intro</key>
+		<string>每月迟到早退一键查询</string>
+		<key>titleColor</key>
+		<string>blue</string>
+	</dict>
+	<dict>
+		<key>iconImage</key>
+		<string>score</string>
+		<key>title</key>
+		<string>成绩查询</string>
+		<key>intro</key>
+		<string>一键了解各科成绩</string>
+		<key>titleColor</key>
+		<string>green</string>
+	</dict>
+	<dict>
+		<key>iconImage</key>
+		<string>exam</string>
+		<key>title</key>
+		<string>考试查询</string>
+		<key>intro</key>
+		<string>考试安排要一键了解</string>
+		<key>titleColor</key>
+		<string>yellow</string>
+	</dict>
+	<dict>
+		<key>iconImage</key>
+		<string>homework_search</string>
+		<key>title</key>
+		<string>作业查询</string>
+		<key>intro</key>
+		<string>家庭作业每日查看</string>
+		<key>titleColor</key>
+		<string>red</string>
+	</dict>
+</array>
+</plist>
