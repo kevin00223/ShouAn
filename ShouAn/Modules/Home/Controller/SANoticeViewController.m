@@ -7,6 +7,8 @@
 //
 
 #import "SANoticeViewController.h"
+#import "SANoticeCell.h"
+#import "SANoticeModel.h"
 
 static NSString *noticeCellID = @"noticeCellID";
 
@@ -24,16 +26,16 @@ static NSString *noticeCellID = @"noticeCellID";
 
 - (void)initValues {
     self.title = @"公示公告";
-//    [self.tableView registerClass:[SAMessageCell class] forCellReuseIdentifier:messageCellID];
-//    self.dataSource = [SAMessageModel messageModelWithPlistName:@"Message.plist"];
+    [self.tableView registerClass:[SANoticeCell class] forCellReuseIdentifier:noticeCellID];
+    self.dataSource = [SANoticeModel noticeModelWithPlistName:@"Notice.plist"];
 }
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    SAMessageCell *messageCell = [tableView dequeueReusableCellWithIdentifier:messageCellID forIndexPath:indexPath];
-//    messageCell.messageModel = self.dataSource[indexPath.row];
-//    messageCell.selectionStyle = UITableViewCellSelectionStyleNone;
-//    return messageCell;
-//}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    SANoticeCell *noticeCell = [tableView dequeueReusableCellWithIdentifier:noticeCellID forIndexPath:indexPath];
+    noticeCell.noticeModel = self.dataSource[indexPath.row];
+    noticeCell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return noticeCell;
+}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 240;

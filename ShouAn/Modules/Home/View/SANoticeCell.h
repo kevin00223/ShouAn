@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SANoticeModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SANoticeCell : UITableViewCell
+
+@property (nonatomic, strong) SANoticeModel *noticeModel;
 
 @end
 

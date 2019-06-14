@@ -21,6 +21,8 @@
 		A215EBCE22B00040006AAB1C /* SAMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBCD22B00040006AAB1C /* SAMessageViewController.m */; };
 		A215EBD122B0004B006AAB1C /* SASearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBD022B0004B006AAB1C /* SASearchViewController.m */; };
 		A215EBD722B00491006AAB1C /* SAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBD622B00491006AAB1C /* SAHomeViewController.m */; };
+		A2AC60D022B343E800247689 /* Notice.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2AC60CF22B343E800247689 /* Notice.plist */; };
+		A2AC60D522B347DD00247689 /* SANoticeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60D422B347DD00247689 /* SANoticeModel.m */; };
 		A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */; };
 		A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9422AF755D001DBEAA /* Assets.xcassets */; };
 		A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9622AF755D001DBEAA /* LaunchScreen.storyboard */; };
@@ -75,6 +77,9 @@
 		A215EBD022B0004B006AAB1C /* SASearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SASearchViewController.m; sourceTree = "<group>"; };
 		A215EBD522B00491006AAB1C /* SAHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAHomeViewController.h; sourceTree = "<group>"; };
 		A215EBD622B00491006AAB1C /* SAHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAHomeViewController.m; sourceTree = "<group>"; };
+		A2AC60CF22B343E800247689 /* Notice.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Notice.plist; sourceTree = "<group>"; };
+		A2AC60D322B347DD00247689 /* SANoticeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SANoticeModel.h; sourceTree = "<group>"; };
+		A2AC60D422B347DD00247689 /* SANoticeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SANoticeModel.m; sourceTree = "<group>"; };
 		A2AE4F8822AF755D001DBEAA /* ShouAn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShouAn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AE4F8B22AF755D001DBEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -159,6 +164,8 @@
 		A215EBBD22AFFFA4006AAB1C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A2AC60D222B347CA00247689 /* Model */,
+				A2AC60D122B343EF00247689 /* Other */,
 				A2AE4FE222B0A1F2001DBEAA /* View */,
 				A215EBC322AFFFFF006AAB1C /* Controller */,
 			);
@@ -245,6 +252,23 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A2AC60D122B343EF00247689 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A2AC60CF22B343E800247689 /* Notice.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		A2AC60D222B347CA00247689 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2AC60D322B347DD00247689 /* SANoticeModel.h */,
+				A2AC60D422B347DD00247689 /* SANoticeModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A2AE4F7F22AF755D001DBEAA = {
@@ -514,6 +538,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AC60D022B343E800247689 /* Notice.plist in Resources */,
 				A2AE502422B220FF001DBEAA /* Message.plist in Resources */,
 				A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */,
 				A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */,
@@ -580,6 +605,7 @@
 				A20D383A22B14F5F0090321D /* SASettingView.m in Sources */,
 				A2AE4FD222AFA32D001DBEAA /* SALoginChildViewController.m in Sources */,
 				A215EBCE22B00040006AAB1C /* SAMessageViewController.m in Sources */,
+				A2AC60D522B347DD00247689 /* SANoticeModel.m in Sources */,
 				A20D383122B136E80090321D /* SATextFieldCell.m in Sources */,
 				A2AE4FEB22B0F8DF001DBEAA /* SAViewWithBottomButton.m in Sources */,
 				A215EBCB22B00033006AAB1C /* SAMineViewController.m in Sources */,

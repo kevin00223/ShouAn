@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>家长会通知</string>
+		<key>firstInfo</key>
+		<string>年级: 初中三年级全体家长</string>
+		<key>secondInfo</key>
+		<string>时间: 2019年06月03日</string>
+		<key>thirdInfo</key>
+		<string>备注: 家长们到校时先开三年级全体家长会议，然后才开班级会议。（请各位家长务必到场，如确实有事不能到场请提前联系班主任。)</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>端午放假通知</string>
+		<key>firstInfo</key>
+		<string>放假时间：2019年06月07日</string>
+		<key>secondInfo</key>
+		<string>上课时间：2019年06月10日</string>
+		<key>thirdInfo</key>
+		<string>备注：放假后请各位家长注意同学们安全问题， 远离危险地方。</string>
+	</dict>
+</array>
+</plist>
