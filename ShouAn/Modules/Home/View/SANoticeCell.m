@@ -19,7 +19,6 @@
 
 @property (nonatomic, strong) UIView *sepratorLine;
 
-
 @property (nonatomic, strong) UIImageView *firstImage;
 @property (nonatomic, strong) UILabel *firstInfoLabel;
 
