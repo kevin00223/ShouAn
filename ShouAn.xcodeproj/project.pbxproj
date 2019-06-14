@@ -26,6 +26,8 @@
 		A2AC60D822B378BD00247689 /* SASearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60D722B378BC00247689 /* SASearchCell.m */; };
 		A2AC60DA22B3864800247689 /* Search.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2AC60D922B3864800247689 /* Search.plist */; };
 		A2AC60DF22B387B700247689 /* SASearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60DE22B387B700247689 /* SASearchModel.m */; };
+		A2AC60EF22B3A31D00247689 /* SAScoreSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60EE22B3A31D00247689 /* SAScoreSearchViewController.m */; };
+		A2AC60F222B3A35700247689 /* SAScoreSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60F122B3A35700247689 /* SAScoreSearchCell.m */; };
 		A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */; };
 		A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9422AF755D001DBEAA /* Assets.xcassets */; };
 		A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9622AF755D001DBEAA /* LaunchScreen.storyboard */; };
@@ -88,6 +90,10 @@
 		A2AC60D922B3864800247689 /* Search.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Search.plist; sourceTree = "<group>"; };
 		A2AC60DD22B387B700247689 /* SASearchModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SASearchModel.h; sourceTree = "<group>"; };
 		A2AC60DE22B387B700247689 /* SASearchModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SASearchModel.m; sourceTree = "<group>"; };
+		A2AC60ED22B3A31D00247689 /* SAScoreSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAScoreSearchViewController.h; sourceTree = "<group>"; };
+		A2AC60EE22B3A31D00247689 /* SAScoreSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAScoreSearchViewController.m; sourceTree = "<group>"; };
+		A2AC60F022B3A35700247689 /* SAScoreSearchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SAScoreSearchCell.h; path = ShouAn/Modules/Search/Controller/SAScoreSearchCell.h; sourceTree = SOURCE_ROOT; };
+		A2AC60F122B3A35700247689 /* SAScoreSearchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SAScoreSearchCell.m; path = ShouAn/Modules/Search/Controller/SAScoreSearchCell.m; sourceTree = SOURCE_ROOT; };
 		A2AE4F8822AF755D001DBEAA /* ShouAn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShouAn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AE4F8B22AF755D001DBEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -253,6 +259,8 @@
 			children = (
 				A215EBCF22B0004B006AAB1C /* SASearchViewController.h */,
 				A215EBD022B0004B006AAB1C /* SASearchViewController.m */,
+				A2AC60ED22B3A31D00247689 /* SAScoreSearchViewController.h */,
+				A2AC60EE22B3A31D00247689 /* SAScoreSearchViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -262,6 +270,8 @@
 			children = (
 				A2AC60D622B378BC00247689 /* SASearchCell.h */,
 				A2AC60D722B378BC00247689 /* SASearchCell.m */,
+				A2AC60F022B3A35700247689 /* SAScoreSearchCell.h */,
+				A2AC60F122B3A35700247689 /* SAScoreSearchCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -610,6 +620,7 @@
 				A2AE4FBC22AF8EF9001DBEAA /* SALoginViewController.m in Sources */,
 				A2AE4FAD22AF824B001DBEAA /* SANavigationController.m in Sources */,
 				A215EBD722B00491006AAB1C /* SAHomeViewController.m in Sources */,
+				A2AC60EF22B3A31D00247689 /* SAScoreSearchViewController.m in Sources */,
 				A2AE505C22B2533D001DBEAA /* SANoticeCell.m in Sources */,
 				A215EBD122B0004B006AAB1C /* SASearchViewController.m in Sources */,
 				A2AE4FD822AFA3AA001DBEAA /* SARegisterChildViewController.m in Sources */,
@@ -642,6 +653,7 @@
 				A2AE4FEB22B0F8DF001DBEAA /* SAViewWithBottomButton.m in Sources */,
 				A215EBCB22B00033006AAB1C /* SAMineViewController.m in Sources */,
 				A20D382E22B135790090321D /* SAChangePwdView.m in Sources */,
+				A2AC60F222B3A35700247689 /* SAScoreSearchCell.m in Sources */,
 				A2AE4FB022AF8277001DBEAA /* SATabBarController.m in Sources */,
 				A2AE4FCB22AFA063001DBEAA /* UIView+SAExtension.m in Sources */,
 			);

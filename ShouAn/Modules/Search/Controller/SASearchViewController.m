@@ -10,6 +10,7 @@
 #import "SASearchCell.h"
 #import "SASearchModel.h"
 #import "SARoundCornerShadowView.h"
+#import "SAScoreSearchViewController.h"
 
 static NSString *searchCellID = @"searchCell";
 
@@ -80,6 +81,27 @@ static NSString *searchCellID = @"searchCell";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 120;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    switch (indexPath.row) {
+        case 0:
+            NSLog(@"");
+            break;
+        case 1:
+            [self.navigationController pushViewController:[SAScoreSearchViewController new] animated:YES];
+            break;
+        case 2:
+            NSLog(@"");
+            break;
+        case 3:
+            NSLog(@"");
+            break;
+        default:
+            break;
+    }
 }
 
 #pragma mark - lazy loading
