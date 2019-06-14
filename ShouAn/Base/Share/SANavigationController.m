@@ -27,6 +27,14 @@
     
     // 统一设置导航栏标题
     [self.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18], NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    // 统一设置返回按钮
+    UIEdgeInsets insets = UIEdgeInsetsMake(0, 0, -3, 0);
+    UIImage *alignedImage = [[UIImage imageNamed:@"back"] imageWithAlignmentRectInsets:insets];
+    [[UINavigationBar appearance] setBackIndicatorImage:alignedImage];
+    [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:alignedImage];
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
@@ -34,9 +42,9 @@
         viewController.hidesBottomBarWhenPushed = YES;
     }
     
-    [super pushViewController:viewController animated:animated];
+    viewController.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStyleDone target:nil action:nil];
     
-    // TODO: 统一设置返回按钮
+    [super pushViewController:viewController animated:animated];
 }
 
 @end
