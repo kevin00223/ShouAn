@@ -31,8 +31,7 @@ static NSString *scoreSearchCellID = @"scoreSearchCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     SAScoreSearchCell *scoreSearchCell = [tableView dequeueReusableCellWithIdentifier:scoreSearchCellID forIndexPath:indexPath];
-    scoreSearchCell.imageView.image = [UIImage imageNamed:self.dataSource[indexPath.row]];
-//    messageCell.messageModel = self.dataSource[indexPath.row];
+    scoreSearchCell.courseView.image = [UIImage imageNamed:self.dataSource[indexPath.row]];
     scoreSearchCell.selectionStyle = UITableViewCellSelectionStyleNone;
     return scoreSearchCell;
 }

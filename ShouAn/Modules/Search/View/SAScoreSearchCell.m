@@ -29,12 +29,9 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    
+
     [self.courseView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.contentView).offset(25);
-        make.top.equalTo(self.contentView).offset(10);
-        make.right.equalTo(self.contentView).offset(-25);
-        make.bottom.equalTo(self.contentView).offset(-10);
+        make.center.equalTo(self.contentView);
     }];
 }
 

@@ -15,6 +15,8 @@
 		A20D383722B14F130090321D /* SASettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D383622B14F130090321D /* SASettingViewController.m */; };
 		A20D383A22B14F5F0090321D /* SASettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D383922B14F5F0090321D /* SASettingView.m */; };
 		A20D384022B1582D0090321D /* SAFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D383F22B1582D0090321D /* SAFeedbackViewController.m */; };
+		A20D384322B491100090321D /* SASearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D384222B491100090321D /* SASearchCell.m */; };
+		A20D384622B4914A0090321D /* SAScoreSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D384422B491490090321D /* SAScoreSearchCell.m */; };
 		A215EBB422AFE05A006AAB1C /* SAStudentInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */; };
 		A215EBB722AFE13B006AAB1C /* SAStudentInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB622AFE13B006AAB1C /* SAStudentInfoView.m */; };
 		A215EBCB22B00033006AAB1C /* SAMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBCA22B00033006AAB1C /* SAMineViewController.m */; };
@@ -23,11 +25,9 @@
 		A215EBD722B00491006AAB1C /* SAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBD622B00491006AAB1C /* SAHomeViewController.m */; };
 		A2AC60D022B343E800247689 /* Notice.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2AC60CF22B343E800247689 /* Notice.plist */; };
 		A2AC60D522B347DD00247689 /* SANoticeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60D422B347DD00247689 /* SANoticeModel.m */; };
-		A2AC60D822B378BD00247689 /* SASearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60D722B378BC00247689 /* SASearchCell.m */; };
 		A2AC60DA22B3864800247689 /* Search.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2AC60D922B3864800247689 /* Search.plist */; };
 		A2AC60DF22B387B700247689 /* SASearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60DE22B387B700247689 /* SASearchModel.m */; };
 		A2AC60EF22B3A31D00247689 /* SAScoreSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60EE22B3A31D00247689 /* SAScoreSearchViewController.m */; };
-		A2AC60F222B3A35700247689 /* SAScoreSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60F122B3A35700247689 /* SAScoreSearchCell.m */; };
 		A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */; };
 		A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9422AF755D001DBEAA /* Assets.xcassets */; };
 		A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9622AF755D001DBEAA /* LaunchScreen.storyboard */; };
@@ -70,6 +70,10 @@
 		A20D383922B14F5F0090321D /* SASettingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SASettingView.m; sourceTree = "<group>"; };
 		A20D383E22B1582D0090321D /* SAFeedbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAFeedbackViewController.h; sourceTree = "<group>"; };
 		A20D383F22B1582D0090321D /* SAFeedbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAFeedbackViewController.m; sourceTree = "<group>"; };
+		A20D384122B491100090321D /* SASearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASearchCell.h; sourceTree = "<group>"; };
+		A20D384222B491100090321D /* SASearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SASearchCell.m; sourceTree = "<group>"; };
+		A20D384422B491490090321D /* SAScoreSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAScoreSearchCell.m; sourceTree = "<group>"; };
+		A20D384522B4914A0090321D /* SAScoreSearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAScoreSearchCell.h; sourceTree = "<group>"; };
 		A215EBB222AFE05A006AAB1C /* SAStudentInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoViewController.h; sourceTree = "<group>"; };
 		A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAStudentInfoViewController.m; sourceTree = "<group>"; };
 		A215EBB522AFE13B006AAB1C /* SAStudentInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoView.h; sourceTree = "<group>"; };
@@ -85,15 +89,11 @@
 		A2AC60CF22B343E800247689 /* Notice.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Notice.plist; sourceTree = "<group>"; };
 		A2AC60D322B347DD00247689 /* SANoticeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SANoticeModel.h; sourceTree = "<group>"; };
 		A2AC60D422B347DD00247689 /* SANoticeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SANoticeModel.m; sourceTree = "<group>"; };
-		A2AC60D622B378BC00247689 /* SASearchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SASearchCell.h; path = ShouAn/Modules/Home/Model/SASearchCell.h; sourceTree = SOURCE_ROOT; };
-		A2AC60D722B378BC00247689 /* SASearchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SASearchCell.m; path = ShouAn/Modules/Home/Model/SASearchCell.m; sourceTree = SOURCE_ROOT; };
 		A2AC60D922B3864800247689 /* Search.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Search.plist; sourceTree = "<group>"; };
 		A2AC60DD22B387B700247689 /* SASearchModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SASearchModel.h; sourceTree = "<group>"; };
 		A2AC60DE22B387B700247689 /* SASearchModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SASearchModel.m; sourceTree = "<group>"; };
 		A2AC60ED22B3A31D00247689 /* SAScoreSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAScoreSearchViewController.h; sourceTree = "<group>"; };
 		A2AC60EE22B3A31D00247689 /* SAScoreSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAScoreSearchViewController.m; sourceTree = "<group>"; };
-		A2AC60F022B3A35700247689 /* SAScoreSearchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SAScoreSearchCell.h; path = ShouAn/Modules/Search/Controller/SAScoreSearchCell.h; sourceTree = SOURCE_ROOT; };
-		A2AC60F122B3A35700247689 /* SAScoreSearchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SAScoreSearchCell.m; path = ShouAn/Modules/Search/Controller/SAScoreSearchCell.m; sourceTree = SOURCE_ROOT; };
 		A2AE4F8822AF755D001DBEAA /* ShouAn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShouAn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AE4F8B22AF755D001DBEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -268,10 +268,10 @@
 		A215EBC822B0001B006AAB1C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A2AC60D622B378BC00247689 /* SASearchCell.h */,
-				A2AC60D722B378BC00247689 /* SASearchCell.m */,
-				A2AC60F022B3A35700247689 /* SAScoreSearchCell.h */,
-				A2AC60F122B3A35700247689 /* SAScoreSearchCell.m */,
+				A20D384522B4914A0090321D /* SAScoreSearchCell.h */,
+				A20D384422B491490090321D /* SAScoreSearchCell.m */,
+				A20D384122B491100090321D /* SASearchCell.h */,
+				A20D384222B491100090321D /* SASearchCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -630,7 +630,6 @@
 				A2AE4FBF22AF914E001DBEAA /* SAView.m in Sources */,
 				A2AE4FE822B0A89C001DBEAA /* UIButton+SACustomButton.m in Sources */,
 				A215EBB422AFE05A006AAB1C /* SAStudentInfoViewController.m in Sources */,
-				A2AC60D822B378BD00247689 /* SASearchCell.m in Sources */,
 				A20D383422B142800090321D /* SAAboutUsViewController.m in Sources */,
 				A2AE505022B232F9001DBEAA /* SARoundCornerShadowView.m in Sources */,
 				A2AE502822B22279001DBEAA /* SAMessageModel.m in Sources */,
@@ -638,6 +637,7 @@
 				A215EBB722AFE13B006AAB1C /* SAStudentInfoView.m in Sources */,
 				A20D382B22B135530090321D /* SAChangePwdViewController.m in Sources */,
 				A2AE4FEF22B1E764001DBEAA /* SABaseCell.m in Sources */,
+				A20D384622B4914A0090321D /* SAScoreSearchCell.m in Sources */,
 				A2AE505622B24C79001DBEAA /* SABaseNoticeViewController.m in Sources */,
 				A2AE505922B24FD7001DBEAA /* SANoticeViewController.m in Sources */,
 				A2AE4FC422AF9198001DBEAA /* SATabView.m in Sources */,
@@ -652,8 +652,8 @@
 				A20D383122B136E80090321D /* SATextFieldCell.m in Sources */,
 				A2AE4FEB22B0F8DF001DBEAA /* SAViewWithBottomButton.m in Sources */,
 				A215EBCB22B00033006AAB1C /* SAMineViewController.m in Sources */,
+				A20D384322B491100090321D /* SASearchCell.m in Sources */,
 				A20D382E22B135790090321D /* SAChangePwdView.m in Sources */,
-				A2AC60F222B3A35700247689 /* SAScoreSearchCell.m in Sources */,
 				A2AE4FB022AF8277001DBEAA /* SATabBarController.m in Sources */,
 				A2AE4FCB22AFA063001DBEAA /* UIView+SAExtension.m in Sources */,
 			);
