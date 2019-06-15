@@ -19,6 +19,9 @@
 		A20D384622B4914A0090321D /* SAScoreSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D384422B491490090321D /* SAScoreSearchCell.m */; };
 		A20D384922B494560090321D /* SAExamSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D384822B494560090321D /* SAExamSearchViewController.m */; };
 		A20D384C22B494A40090321D /* SAExamSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D384B22B494A40090321D /* SAExamSearchCell.m */; };
+		A20D384F22B49DBB0090321D /* SASingleExamResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D384E22B49DBB0090321D /* SASingleExamResultViewController.m */; };
+		A20D385222B4A2450090321D /* SASingleCourseResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D385122B4A2450090321D /* SASingleCourseResultModel.m */; };
+		A20D385522B4A56A0090321D /* SASingleCourseResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D385422B4A56A0090321D /* SASingleCourseResultCell.m */; };
 		A215EBB422AFE05A006AAB1C /* SAStudentInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */; };
 		A215EBB722AFE13B006AAB1C /* SAStudentInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB622AFE13B006AAB1C /* SAStudentInfoView.m */; };
 		A215EBCB22B00033006AAB1C /* SAMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBCA22B00033006AAB1C /* SAMineViewController.m */; };
@@ -80,6 +83,12 @@
 		A20D384822B494560090321D /* SAExamSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAExamSearchViewController.m; sourceTree = "<group>"; };
 		A20D384A22B494A40090321D /* SAExamSearchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAExamSearchCell.h; sourceTree = "<group>"; };
 		A20D384B22B494A40090321D /* SAExamSearchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAExamSearchCell.m; sourceTree = "<group>"; };
+		A20D384D22B49DBB0090321D /* SASingleExamResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SASingleExamResultViewController.h; sourceTree = "<group>"; };
+		A20D384E22B49DBB0090321D /* SASingleExamResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SASingleExamResultViewController.m; sourceTree = "<group>"; };
+		A20D385022B4A2450090321D /* SASingleCourseResultModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SASingleCourseResultModel.h; sourceTree = "<group>"; };
+		A20D385122B4A2450090321D /* SASingleCourseResultModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SASingleCourseResultModel.m; sourceTree = "<group>"; };
+		A20D385322B4A56A0090321D /* SASingleCourseResultCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SASingleCourseResultCell.h; sourceTree = "<group>"; };
+		A20D385422B4A56A0090321D /* SASingleCourseResultCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SASingleCourseResultCell.m; sourceTree = "<group>"; };
 		A215EBB222AFE05A006AAB1C /* SAStudentInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoViewController.h; sourceTree = "<group>"; };
 		A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAStudentInfoViewController.m; sourceTree = "<group>"; };
 		A215EBB522AFE13B006AAB1C /* SAStudentInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoView.h; sourceTree = "<group>"; };
@@ -269,6 +278,8 @@
 				A2AC60EE22B3A31D00247689 /* SAScoreSearchViewController.m */,
 				A20D384722B494560090321D /* SAExamSearchViewController.h */,
 				A20D384822B494560090321D /* SAExamSearchViewController.m */,
+				A20D384D22B49DBB0090321D /* SASingleExamResultViewController.h */,
+				A20D384E22B49DBB0090321D /* SASingleExamResultViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -282,6 +293,8 @@
 				A20D384222B491100090321D /* SASearchCell.m */,
 				A20D384A22B494A40090321D /* SAExamSearchCell.h */,
 				A20D384B22B494A40090321D /* SAExamSearchCell.m */,
+				A20D385322B4A56A0090321D /* SASingleCourseResultCell.h */,
+				A20D385422B4A56A0090321D /* SASingleCourseResultCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,6 +329,8 @@
 			children = (
 				A2AC60DD22B387B700247689 /* SASearchModel.h */,
 				A2AC60DE22B387B700247689 /* SASearchModel.m */,
+				A20D385022B4A2450090321D /* SASingleCourseResultModel.h */,
+				A20D385122B4A2450090321D /* SASingleCourseResultModel.m */,
 			);
 			path = SearchModel;
 			sourceTree = "<group>";
@@ -630,6 +645,7 @@
 				A2AE4FBC22AF8EF9001DBEAA /* SALoginViewController.m in Sources */,
 				A2AE4FAD22AF824B001DBEAA /* SANavigationController.m in Sources */,
 				A215EBD722B00491006AAB1C /* SAHomeViewController.m in Sources */,
+				A20D385522B4A56A0090321D /* SASingleCourseResultCell.m in Sources */,
 				A2AC60EF22B3A31D00247689 /* SAScoreSearchViewController.m in Sources */,
 				A2AE505C22B2533D001DBEAA /* SANoticeCell.m in Sources */,
 				A215EBD122B0004B006AAB1C /* SASearchViewController.m in Sources */,
@@ -641,6 +657,7 @@
 				A2AE4FE822B0A89C001DBEAA /* UIButton+SACustomButton.m in Sources */,
 				A215EBB422AFE05A006AAB1C /* SAStudentInfoViewController.m in Sources */,
 				A20D383422B142800090321D /* SAAboutUsViewController.m in Sources */,
+				A20D385222B4A2450090321D /* SASingleCourseResultModel.m in Sources */,
 				A2AE505022B232F9001DBEAA /* SARoundCornerShadowView.m in Sources */,
 				A20D384C22B494A40090321D /* SAExamSearchCell.m in Sources */,
 				A20D384922B494560090321D /* SAExamSearchViewController.m in Sources */,
@@ -665,6 +682,7 @@
 				A2AE4FEB22B0F8DF001DBEAA /* SAViewWithBottomButton.m in Sources */,
 				A215EBCB22B00033006AAB1C /* SAMineViewController.m in Sources */,
 				A20D384322B491100090321D /* SASearchCell.m in Sources */,
+				A20D384F22B49DBB0090321D /* SASingleExamResultViewController.m in Sources */,
 				A20D382E22B135790090321D /* SAChangePwdView.m in Sources */,
 				A2AE4FB022AF8277001DBEAA /* SATabBarController.m in Sources */,
 				A2AE4FCB22AFA063001DBEAA /* UIView+SAExtension.m in Sources */,
