@@ -11,6 +11,7 @@
 #import "SASearchModel.h"
 #import "SARoundCornerShadowView.h"
 #import "SAScoreSearchViewController.h"
+#import "SAExamSearchViewController.h"
 
 static NSString *searchCellID = @"searchCell";
 
@@ -94,7 +95,7 @@ static NSString *searchCellID = @"searchCell";
             [self.navigationController pushViewController:[SAScoreSearchViewController new] animated:YES];
             break;
         case 2:
-            NSLog(@"");
+            [self.navigationController pushViewController:[SAExamSearchViewController new] animated:YES];
             break;
         case 3:
             NSLog(@"");
