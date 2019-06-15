@@ -25,6 +25,9 @@
 		A20D385822B4D0430090321D /* SAExamInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D385722B4D0430090321D /* SAExamInfoViewController.m */; };
 		A20D385B22B4D07E0090321D /* SAExamInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D385A22B4D07E0090321D /* SAExamInfoCell.m */; };
 		A20D385E22B4D82D0090321D /* SAExamInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D385D22B4D82D0090321D /* SAExamInfoModel.m */; };
+		A20D386122B4E5EB0090321D /* SALeaveRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D386022B4E5EB0090321D /* SALeaveRecordViewController.m */; };
+		A20D386422B4E68A0090321D /* SALeaveRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D386322B4E68A0090321D /* SALeaveRecordCell.m */; };
+		A20D386722B4F1B60090321D /* SALeaveRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D386622B4F1B60090321D /* SALeaveRecordModel.m */; };
 		A215EBB422AFE05A006AAB1C /* SAStudentInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */; };
 		A215EBB722AFE13B006AAB1C /* SAStudentInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB622AFE13B006AAB1C /* SAStudentInfoView.m */; };
 		A215EBCB22B00033006AAB1C /* SAMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBCA22B00033006AAB1C /* SAMineViewController.m */; };
@@ -98,6 +101,12 @@
 		A20D385A22B4D07E0090321D /* SAExamInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAExamInfoCell.m; sourceTree = "<group>"; };
 		A20D385C22B4D82D0090321D /* SAExamInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAExamInfoModel.h; sourceTree = "<group>"; };
 		A20D385D22B4D82D0090321D /* SAExamInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAExamInfoModel.m; sourceTree = "<group>"; };
+		A20D385F22B4E5EB0090321D /* SALeaveRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SALeaveRecordViewController.h; sourceTree = "<group>"; };
+		A20D386022B4E5EB0090321D /* SALeaveRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SALeaveRecordViewController.m; sourceTree = "<group>"; };
+		A20D386222B4E68A0090321D /* SALeaveRecordCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SALeaveRecordCell.h; sourceTree = "<group>"; };
+		A20D386322B4E68A0090321D /* SALeaveRecordCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SALeaveRecordCell.m; sourceTree = "<group>"; };
+		A20D386522B4F1B60090321D /* SALeaveRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SALeaveRecordModel.h; sourceTree = "<group>"; };
+		A20D386622B4F1B60090321D /* SALeaveRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SALeaveRecordModel.m; sourceTree = "<group>"; };
 		A215EBB222AFE05A006AAB1C /* SAStudentInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoViewController.h; sourceTree = "<group>"; };
 		A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAStudentInfoViewController.m; sourceTree = "<group>"; };
 		A215EBB522AFE13B006AAB1C /* SAStudentInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoView.h; sourceTree = "<group>"; };
@@ -265,6 +274,8 @@
 				A215EBD622B00491006AAB1C /* SAHomeViewController.m */,
 				A2AE505722B24FD7001DBEAA /* SANoticeViewController.h */,
 				A2AE505822B24FD7001DBEAA /* SANoticeViewController.m */,
+				A20D385F22B4E5EB0090321D /* SALeaveRecordViewController.h */,
+				A20D386022B4E5EB0090321D /* SALeaveRecordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -325,6 +336,8 @@
 			children = (
 				A2AC60D322B347DD00247689 /* SANoticeModel.h */,
 				A2AC60D422B347DD00247689 /* SANoticeModel.m */,
+				A20D386522B4F1B60090321D /* SALeaveRecordModel.h */,
+				A20D386622B4F1B60090321D /* SALeaveRecordModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -517,6 +530,8 @@
 			children = (
 				A2AE505A22B2533D001DBEAA /* SANoticeCell.h */,
 				A2AE505B22B2533D001DBEAA /* SANoticeCell.m */,
+				A20D386222B4E68A0090321D /* SALeaveRecordCell.h */,
+				A20D386322B4E68A0090321D /* SALeaveRecordCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -663,7 +678,9 @@
 				A20D385522B4A56A0090321D /* SASingleCourseResultCell.m in Sources */,
 				A2AC60EF22B3A31D00247689 /* SAScoreSearchViewController.m in Sources */,
 				A2AE505C22B2533D001DBEAA /* SANoticeCell.m in Sources */,
+				A20D386422B4E68A0090321D /* SALeaveRecordCell.m in Sources */,
 				A215EBD122B0004B006AAB1C /* SASearchViewController.m in Sources */,
+				A20D386122B4E5EB0090321D /* SALeaveRecordViewController.m in Sources */,
 				A2AE4FD822AFA3AA001DBEAA /* SARegisterChildViewController.m in Sources */,
 				A2AE4FB322AF828C001DBEAA /* SABaseViewController.m in Sources */,
 				A2AE4FDB22AFA457001DBEAA /* SAContentView.m in Sources */,
@@ -685,6 +702,7 @@
 				A20D384622B4914A0090321D /* SAScoreSearchCell.m in Sources */,
 				A2AE505622B24C79001DBEAA /* SABaseNoticeViewController.m in Sources */,
 				A2AE505922B24FD7001DBEAA /* SANoticeViewController.m in Sources */,
+				A20D386722B4F1B60090321D /* SALeaveRecordModel.m in Sources */,
 				A20D385B22B4D07E0090321D /* SAExamInfoCell.m in Sources */,
 				A2AE4FC422AF9198001DBEAA /* SATabView.m in Sources */,
 				A2AE502122B22011001DBEAA /* SAMessageCell.m in Sources */,
