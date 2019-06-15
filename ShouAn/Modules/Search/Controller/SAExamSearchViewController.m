@@ -8,6 +8,7 @@
 
 #import "SAExamSearchViewController.h"
 #import "SAExamSearchCell.h"
+#import "SAExamInfoViewController.h"
 
 static NSString *examSearchCellID = @"examSearchCell";
 
@@ -34,6 +35,14 @@ static NSString *examSearchCellID = @"examSearchCell";
     examSearchCell.titleText = self.dataSource[indexPath.row];
     examSearchCell.selectionStyle = UITableViewCellSelectionStyleNone;
     return examSearchCell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    SAExamInfoViewController *examInfoVC = [[SAExamInfoViewController alloc]init];
+    [self.navigationController pushViewController:examInfoVC animated:YES];
+    examInfoVC.examType = indexPath.row;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
