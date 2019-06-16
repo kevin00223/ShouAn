@@ -9,6 +9,7 @@
 #import "SALeaveRecordViewController.h"
 #import "SALeaveRecordCell.h"
 #import "SALeaveRecordModel.h"
+#import "SALeaveRecordInfoViewController.h"
 
 static NSString *leaveRecordCellID = @"leaveRecordCell";
 
@@ -42,6 +43,15 @@ static NSString *leaveRecordCellID = @"leaveRecordCell";
     leaveRecordCell.leaveRecordModel = self.dataSource[indexPath.row];
     leaveRecordCell.selectionStyle = UITableViewCellSelectionStyleNone;
     return leaveRecordCell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    UIStoryboard *board = [UIStoryboard storyboardWithName:@"SALeaveRecordInfo" bundle:nil];
+    SALeaveRecordInfoViewController *leaveRecordInfoVC = [board instantiateViewControllerWithIdentifier:@"leaveRecordInfo"];
+    [self.navigationController pushViewController:leaveRecordInfoVC animated:YES];
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

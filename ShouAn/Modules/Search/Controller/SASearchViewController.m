@@ -12,6 +12,7 @@
 #import "SARoundCornerShadowView.h"
 #import "SAScoreSearchViewController.h"
 #import "SAExamSearchViewController.h"
+//#import "SATestViewController.h"
 
 static NSString *searchCellID = @"searchCell";
 
@@ -88,8 +89,11 @@ static NSString *searchCellID = @"searchCell";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     switch (indexPath.row) {
-        case 0:
-            NSLog(@"");
+        case 0: {
+            UIStoryboard *board = [UIStoryboard storyboardWithName:@"SATestViewController" bundle:nil];
+            UIViewController *vc = [board instantiateViewControllerWithIdentifier:@"satest"];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             break;
         case 1:
             [self.navigationController pushViewController:[SAScoreSearchViewController new] animated:YES];
