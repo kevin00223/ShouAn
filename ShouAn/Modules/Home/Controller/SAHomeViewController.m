@@ -10,6 +10,7 @@
 #import "UIButton+SACustomButton.h"
 #import "SANoticeViewController.h"
 #import "SALeaveRecordViewController.h"
+#import "SADayOffViewController.h"
 
 #define kTopViewHeight 262
 #define kMargin 10
@@ -109,8 +110,11 @@ typedef enum {
         case SAHomeGridTypeHomework:
             NSLog(@"homework");
             break;
-        case SAHomeGridTypeDayoff:
-            NSLog(@"dayoff");
+        case SAHomeGridTypeDayoff: {
+            UIStoryboard *board = [UIStoryboard storyboardWithName:@"SADayOff" bundle:nil];
+            SADayOffViewController *vc = [board instantiateViewControllerWithIdentifier:@"dayOff"];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             break;
         case SAHomeGridTypeCurriculum:
             NSLog(@"curr");
