@@ -52,6 +52,7 @@
 		A2AC610222B77CBB00247689 /* SAContactListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC610122B77CBB00247689 /* SAContactListCell.m */; };
 		A2AC610822B785F800247689 /* SAHomeWorkController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC610722B785F800247689 /* SAHomeWorkController.m */; };
 		A2AC610A22B7860700247689 /* SAHomeWork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AC610922B7860700247689 /* SAHomeWork.storyboard */; };
+		A2AC610C22B79C4700247689 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AC610B22B79C4700247689 /* Images.xcassets */; };
 		A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */; };
 		A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9422AF755D001DBEAA /* Assets.xcassets */; };
 		A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9622AF755D001DBEAA /* LaunchScreen.storyboard */; };
@@ -162,6 +163,7 @@
 		A2AC610622B785F800247689 /* SAHomeWorkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAHomeWorkController.h; sourceTree = "<group>"; };
 		A2AC610722B785F800247689 /* SAHomeWorkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAHomeWorkController.m; sourceTree = "<group>"; };
 		A2AC610922B7860700247689 /* SAHomeWork.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SAHomeWork.storyboard; sourceTree = "<group>"; };
+		A2AC610B22B79C4700247689 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A2AE4F8822AF755D001DBEAA /* ShouAn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShouAn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AE4F8B22AF755D001DBEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -443,6 +445,7 @@
 				A2AE4F9622AF755D001DBEAA /* LaunchScreen.storyboard */,
 				A2AE4F9922AF755D001DBEAA /* Info.plist */,
 				A2AE4F9A22AF755D001DBEAA /* main.m */,
+				A2AC610B22B79C4700247689 /* Images.xcassets */,
 			);
 			path = ShouAn;
 			sourceTree = "<group>";
@@ -690,6 +693,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2AC60D022B343E800247689 /* Notice.plist in Resources */,
+				A2AC610C22B79C4700247689 /* Images.xcassets in Resources */,
 				A2AE502422B220FF001DBEAA /* Message.plist in Resources */,
 				A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */,
 				A2AC60FC22B7793900247689 /* ContactList.plist in Resources */,
@@ -926,6 +930,7 @@
 			baseConfigurationReference = E993A96181A20CD49670007B /* Pods-ShouAn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CQ6UA9X9H9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -946,6 +951,7 @@
 			baseConfigurationReference = 3C36135E39BBBDB76EB28B27 /* Pods-ShouAn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CQ6UA9X9H9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
