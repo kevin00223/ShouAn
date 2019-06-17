@@ -11,6 +11,7 @@
 #import "SANoticeViewController.h"
 #import "SALeaveRecordViewController.h"
 #import "SADayOffViewController.h"
+#import "SAContactListViewController.h"
 
 #define kTopViewHeight 262
 #define kMargin 10
@@ -120,7 +121,7 @@ typedef enum {
             NSLog(@"curr");
             break;
         case SAHomeGridTypeContactList:
-            NSLog(@"contact");
+            [self.navigationController pushViewController:[SAContactListViewController new] animated:YES];
             break;
         case SAHomeGridTypeLeaveRecord:
            [self.navigationController pushViewController:[SALeaveRecordViewController new] animated:YES];

@@ -46,6 +46,10 @@
 		A2AC60DF22B387B700247689 /* SASearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60DE22B387B700247689 /* SASearchModel.m */; };
 		A2AC60EF22B3A31D00247689 /* SAScoreSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60EE22B3A31D00247689 /* SAScoreSearchViewController.m */; };
 		A2AC60F522B72A1900247689 /* SADayOffApprovalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60F422B72A1900247689 /* SADayOffApprovalViewController.m */; };
+		A2AC60F822B73D3300247689 /* SAContactListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60F722B73D3300247689 /* SAContactListViewController.m */; };
+		A2AC60FC22B7793900247689 /* ContactList.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2AC60FB22B7793900247689 /* ContactList.plist */; };
+		A2AC60FF22B77A8A00247689 /* SAContactListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60FE22B77A8A00247689 /* SAContactListModel.m */; };
+		A2AC610222B77CBB00247689 /* SAContactListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC610122B77CBB00247689 /* SAContactListCell.m */; };
 		A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */; };
 		A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9422AF755D001DBEAA /* Assets.xcassets */; };
 		A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9622AF755D001DBEAA /* LaunchScreen.storyboard */; };
@@ -146,6 +150,13 @@
 		A2AC60EE22B3A31D00247689 /* SAScoreSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAScoreSearchViewController.m; sourceTree = "<group>"; };
 		A2AC60F322B72A1900247689 /* SADayOffApprovalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SADayOffApprovalViewController.h; sourceTree = "<group>"; };
 		A2AC60F422B72A1900247689 /* SADayOffApprovalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SADayOffApprovalViewController.m; sourceTree = "<group>"; };
+		A2AC60F622B73D3300247689 /* SAContactListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAContactListViewController.h; sourceTree = "<group>"; };
+		A2AC60F722B73D3300247689 /* SAContactListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAContactListViewController.m; sourceTree = "<group>"; };
+		A2AC60FB22B7793900247689 /* ContactList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ContactList.plist; sourceTree = "<group>"; };
+		A2AC60FD22B77A8A00247689 /* SAContactListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAContactListModel.h; sourceTree = "<group>"; };
+		A2AC60FE22B77A8A00247689 /* SAContactListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAContactListModel.m; sourceTree = "<group>"; };
+		A2AC610022B77CBB00247689 /* SAContactListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAContactListCell.h; sourceTree = "<group>"; };
+		A2AC610122B77CBB00247689 /* SAContactListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAContactListCell.m; sourceTree = "<group>"; };
 		A2AE4F8822AF755D001DBEAA /* ShouAn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShouAn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AE4F8B22AF755D001DBEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -303,6 +314,8 @@
 				A20D389222B68C710090321D /* SADayOff.storyboard */,
 				A2AC60F322B72A1900247689 /* SADayOffApprovalViewController.h */,
 				A2AC60F422B72A1900247689 /* SADayOffApprovalViewController.m */,
+				A2AC60F622B73D3300247689 /* SAContactListViewController.h */,
+				A2AC60F722B73D3300247689 /* SAContactListViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -354,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				A2AC60CF22B343E800247689 /* Notice.plist */,
+				A2AC60FB22B7793900247689 /* ContactList.plist */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -365,6 +379,8 @@
 				A2AC60D422B347DD00247689 /* SANoticeModel.m */,
 				A20D386522B4F1B60090321D /* SALeaveRecordModel.h */,
 				A20D386622B4F1B60090321D /* SALeaveRecordModel.m */,
+				A2AC60FD22B77A8A00247689 /* SAContactListModel.h */,
+				A2AC60FE22B77A8A00247689 /* SAContactListModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -563,6 +579,8 @@
 				A20D386C22B4F6A50090321D /* SALeaveRecordInfoNormalCell.m */,
 				A20D386E22B4F6BA0090321D /* SALeaveRecordInfoSpecialCell.h */,
 				A20D386F22B4F6BA0090321D /* SALeaveRecordInfoSpecialCell.m */,
+				A2AC610022B77CBB00247689 /* SAContactListCell.h */,
+				A2AC610122B77CBB00247689 /* SAContactListCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -666,6 +684,7 @@
 				A2AC60D022B343E800247689 /* Notice.plist in Resources */,
 				A2AE502422B220FF001DBEAA /* Message.plist in Resources */,
 				A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */,
+				A2AC60FC22B7793900247689 /* ContactList.plist in Resources */,
 				A2AC60DA22B3864800247689 /* Search.plist in Resources */,
 				A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */,
 				A20D388E22B6884F0090321D /* SALeaveRecordInfo.storyboard in Resources */,
@@ -716,6 +735,7 @@
 				A215EBD122B0004B006AAB1C /* SASearchViewController.m in Sources */,
 				A20D386122B4E5EB0090321D /* SALeaveRecordViewController.m in Sources */,
 				A2AE4FD822AFA3AA001DBEAA /* SARegisterChildViewController.m in Sources */,
+				A2AC60F822B73D3300247689 /* SAContactListViewController.m in Sources */,
 				A2AE4FB322AF828C001DBEAA /* SABaseViewController.m in Sources */,
 				A2AC60F522B72A1900247689 /* SADayOffApprovalViewController.m in Sources */,
 				A2AE4FDB22AFA457001DBEAA /* SAContentView.m in Sources */,
@@ -729,6 +749,7 @@
 				A2AE505022B232F9001DBEAA /* SARoundCornerShadowView.m in Sources */,
 				A20D384C22B494A40090321D /* SAExamSearchCell.m in Sources */,
 				A20D384922B494560090321D /* SAExamSearchViewController.m in Sources */,
+				A2AC60FF22B77A8A00247689 /* SAContactListModel.m in Sources */,
 				A2AE502822B22279001DBEAA /* SAMessageModel.m in Sources */,
 				A20D384022B1582D0090321D /* SAFeedbackViewController.m in Sources */,
 				A20D385822B4D0430090321D /* SAExamInfoViewController.m in Sources */,
@@ -751,6 +772,7 @@
 				A2AC60D522B347DD00247689 /* SANoticeModel.m in Sources */,
 				A20D383122B136E80090321D /* SATextFieldCell.m in Sources */,
 				A20D388A22B534450090321D /* SALeaveRecordInfoViewController.m in Sources */,
+				A2AC610222B77CBB00247689 /* SAContactListCell.m in Sources */,
 				A2AE4FEB22B0F8DF001DBEAA /* SAViewWithBottomButton.m in Sources */,
 				A215EBCB22B00033006AAB1C /* SAMineViewController.m in Sources */,
 				A20D384322B491100090321D /* SASearchCell.m in Sources */,
