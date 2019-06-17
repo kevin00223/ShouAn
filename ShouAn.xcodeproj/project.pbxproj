@@ -45,6 +45,7 @@
 		A2AC60DA22B3864800247689 /* Search.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2AC60D922B3864800247689 /* Search.plist */; };
 		A2AC60DF22B387B700247689 /* SASearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60DE22B387B700247689 /* SASearchModel.m */; };
 		A2AC60EF22B3A31D00247689 /* SAScoreSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60EE22B3A31D00247689 /* SAScoreSearchViewController.m */; };
+		A2AC60F522B72A1900247689 /* SADayOffApprovalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60F422B72A1900247689 /* SADayOffApprovalViewController.m */; };
 		A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */; };
 		A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9422AF755D001DBEAA /* Assets.xcassets */; };
 		A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9622AF755D001DBEAA /* LaunchScreen.storyboard */; };
@@ -143,6 +144,8 @@
 		A2AC60DE22B387B700247689 /* SASearchModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SASearchModel.m; sourceTree = "<group>"; };
 		A2AC60ED22B3A31D00247689 /* SAScoreSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAScoreSearchViewController.h; sourceTree = "<group>"; };
 		A2AC60EE22B3A31D00247689 /* SAScoreSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAScoreSearchViewController.m; sourceTree = "<group>"; };
+		A2AC60F322B72A1900247689 /* SADayOffApprovalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SADayOffApprovalViewController.h; sourceTree = "<group>"; };
+		A2AC60F422B72A1900247689 /* SADayOffApprovalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SADayOffApprovalViewController.m; sourceTree = "<group>"; };
 		A2AE4F8822AF755D001DBEAA /* ShouAn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShouAn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AE4F8B22AF755D001DBEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -298,6 +301,8 @@
 				A20D388F22B68C600090321D /* SADayOffViewController.h */,
 				A20D389022B68C600090321D /* SADayOffViewController.m */,
 				A20D389222B68C710090321D /* SADayOff.storyboard */,
+				A2AC60F322B72A1900247689 /* SADayOffApprovalViewController.h */,
+				A2AC60F422B72A1900247689 /* SADayOffApprovalViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -712,6 +717,7 @@
 				A20D386122B4E5EB0090321D /* SALeaveRecordViewController.m in Sources */,
 				A2AE4FD822AFA3AA001DBEAA /* SARegisterChildViewController.m in Sources */,
 				A2AE4FB322AF828C001DBEAA /* SABaseViewController.m in Sources */,
+				A2AC60F522B72A1900247689 /* SADayOffApprovalViewController.m in Sources */,
 				A2AE4FDB22AFA457001DBEAA /* SAContentView.m in Sources */,
 				A2AC60DF22B387B700247689 /* SASearchModel.m in Sources */,
 				A20D387022B4F6BA0090321D /* SALeaveRecordInfoSpecialCell.m in Sources */,

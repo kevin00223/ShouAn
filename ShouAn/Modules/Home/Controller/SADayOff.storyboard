@@ -634,10 +634,19 @@
                             <outlet property="delegate" destination="mGR-ea-YYd" id="IWu-rf-RKE"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="endTimeTextField" destination="l5m-Gb-rvd" id="hsm-Og-hF0"/>
+                        <outlet property="gradeTextField" destination="rZi-rh-Sr1" id="gqz-w8-HZG"/>
+                        <outlet property="parentNameTextField" destination="Enp-fF-AeS" id="lez-af-pM6"/>
+                        <outlet property="reasonTextField" destination="fBu-6k-S9g" id="JgX-29-LqP"/>
+                        <outlet property="startTimeTextField" destination="THz-Tr-Tw8" id="q2D-G0-GY0"/>
+                        <outlet property="studentNameTextField" destination="key-MB-rio" id="Kdl-Dn-jbf"/>
+                        <outlet property="typeTextField" destination="ibg-9D-4Se" id="G3A-aZ-MWp"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JtB-s8-JUr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="200.00000000000003" y="-13.392857142857142"/>
+            <point key="canvasLocation" x="178" y="-73"/>
         </scene>
     </scenes>
     <resources>
