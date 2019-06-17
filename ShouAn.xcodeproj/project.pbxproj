@@ -50,6 +50,8 @@
 		A2AC60FC22B7793900247689 /* ContactList.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2AC60FB22B7793900247689 /* ContactList.plist */; };
 		A2AC60FF22B77A8A00247689 /* SAContactListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60FE22B77A8A00247689 /* SAContactListModel.m */; };
 		A2AC610222B77CBB00247689 /* SAContactListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC610122B77CBB00247689 /* SAContactListCell.m */; };
+		A2AC610822B785F800247689 /* SAHomeWorkController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC610722B785F800247689 /* SAHomeWorkController.m */; };
+		A2AC610A22B7860700247689 /* SAHomeWork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AC610922B7860700247689 /* SAHomeWork.storyboard */; };
 		A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */; };
 		A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9422AF755D001DBEAA /* Assets.xcassets */; };
 		A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9622AF755D001DBEAA /* LaunchScreen.storyboard */; };
@@ -157,6 +159,9 @@
 		A2AC60FE22B77A8A00247689 /* SAContactListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAContactListModel.m; sourceTree = "<group>"; };
 		A2AC610022B77CBB00247689 /* SAContactListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAContactListCell.h; sourceTree = "<group>"; };
 		A2AC610122B77CBB00247689 /* SAContactListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAContactListCell.m; sourceTree = "<group>"; };
+		A2AC610622B785F800247689 /* SAHomeWorkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAHomeWorkController.h; sourceTree = "<group>"; };
+		A2AC610722B785F800247689 /* SAHomeWorkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAHomeWorkController.m; sourceTree = "<group>"; };
+		A2AC610922B7860700247689 /* SAHomeWork.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SAHomeWork.storyboard; sourceTree = "<group>"; };
 		A2AE4F8822AF755D001DBEAA /* ShouAn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShouAn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AE4F8B22AF755D001DBEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -316,6 +321,9 @@
 				A2AC60F422B72A1900247689 /* SADayOffApprovalViewController.m */,
 				A2AC60F622B73D3300247689 /* SAContactListViewController.h */,
 				A2AC60F722B73D3300247689 /* SAContactListViewController.m */,
+				A2AC610622B785F800247689 /* SAHomeWorkController.h */,
+				A2AC610722B785F800247689 /* SAHomeWorkController.m */,
+				A2AC610922B7860700247689 /* SAHomeWork.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -685,6 +693,7 @@
 				A2AE502422B220FF001DBEAA /* Message.plist in Resources */,
 				A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */,
 				A2AC60FC22B7793900247689 /* ContactList.plist in Resources */,
+				A2AC610A22B7860700247689 /* SAHomeWork.storyboard in Resources */,
 				A2AC60DA22B3864800247689 /* Search.plist in Resources */,
 				A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */,
 				A20D388E22B6884F0090321D /* SALeaveRecordInfo.storyboard in Resources */,
@@ -730,6 +739,7 @@
 				A20D385522B4A56A0090321D /* SASingleCourseResultCell.m in Sources */,
 				A2AC60EF22B3A31D00247689 /* SAScoreSearchViewController.m in Sources */,
 				A2AE505C22B2533D001DBEAA /* SANoticeCell.m in Sources */,
+				A2AC610822B785F800247689 /* SAHomeWorkController.m in Sources */,
 				A20D386422B4E68A0090321D /* SALeaveRecordCell.m in Sources */,
 				A20D389122B68C600090321D /* SADayOffViewController.m in Sources */,
 				A215EBD122B0004B006AAB1C /* SASearchViewController.m in Sources */,

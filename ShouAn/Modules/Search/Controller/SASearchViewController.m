@@ -12,7 +12,7 @@
 #import "SARoundCornerShadowView.h"
 #import "SAScoreSearchViewController.h"
 #import "SAExamSearchViewController.h"
-//#import "SATestViewController.h"
+#import "SAHomeWorkController.h"
 
 static NSString *searchCellID = @"searchCell";
 
@@ -90,9 +90,7 @@ static NSString *searchCellID = @"searchCell";
     
     switch (indexPath.row) {
         case 0: {
-            UIStoryboard *board = [UIStoryboard storyboardWithName:@"SATestViewController" bundle:nil];
-            UIViewController *vc = [board instantiateViewControllerWithIdentifier:@"satest"];
-            [self.navigationController pushViewController:vc animated:YES];
+            NSLog(@"考勤");
         }
             break;
         case 1:
@@ -101,8 +99,11 @@ static NSString *searchCellID = @"searchCell";
         case 2:
             [self.navigationController pushViewController:[SAExamSearchViewController new] animated:YES];
             break;
-        case 3:
-            NSLog(@"");
+        case 3: {
+            UIStoryboard *board = [UIStoryboard storyboardWithName:@"SAHomeWork" bundle:nil];
+            SAHomeWorkController *vc = [board instantiateViewControllerWithIdentifier:@"homework"];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             break;
         default:
             break;

@@ -12,6 +12,7 @@
 #import "SALeaveRecordViewController.h"
 #import "SADayOffViewController.h"
 #import "SAContactListViewController.h"
+#import "SAHomeWorkController.h"
 
 #define kTopViewHeight 262
 #define kMargin 10
@@ -108,8 +109,11 @@ typedef enum {
         case SAHomeGridTypeNotice:
             [self.navigationController pushViewController:[SANoticeViewController new] animated:YES];
             break;
-        case SAHomeGridTypeHomework:
-            NSLog(@"homework");
+        case SAHomeGridTypeHomework: {
+            UIStoryboard *board = [UIStoryboard storyboardWithName:@"SAHomeWork" bundle:nil];
+            SAHomeWorkController *vc = [board instantiateViewControllerWithIdentifier:@"homework"];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             break;
         case SAHomeGridTypeDayoff: {
             UIStoryboard *board = [UIStoryboard storyboardWithName:@"SADayOff" bundle:nil];
