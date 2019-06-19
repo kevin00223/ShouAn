@@ -45,7 +45,7 @@
 - (UITextField *)infoTextField {
     if (!_infoTextField) {
         _infoTextField = [[UITextField alloc]init];
-        _infoTextField.backgroundColor = [UIColor cyanColor];
+        _infoTextField.backgroundColor = [UIColor whiteColor];
     }
     return _infoTextField;
 }

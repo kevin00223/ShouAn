@@ -12,6 +12,7 @@
 #import "SASettingViewController.h"
 #import "SABaseCell.h"
 #import "SARoundCornerShadowView.h"
+#import "SAStudentInfoViewController.h"
 
 static NSString *mineCellID = @"mineCell";
 
@@ -104,7 +105,7 @@ static NSString *mineCellID = @"mineCell";
     
     switch (indexPath.row) {
         case 0:
-            NSLog(@"信息");
+            [self.navigationController pushViewController:[SAStudentInfoViewController new] animated:YES];
             break;
         case 1:
             [self.navigationController pushViewController:[SAChangePwdViewController new] animated:YES];
