@@ -40,6 +40,10 @@
 		A215EBCE22B00040006AAB1C /* SAMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBCD22B00040006AAB1C /* SAMessageViewController.m */; };
 		A215EBD122B0004B006AAB1C /* SASearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBD022B0004B006AAB1C /* SASearchViewController.m */; };
 		A215EBD722B00491006AAB1C /* SAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBD622B00491006AAB1C /* SAHomeViewController.m */; };
+		A217A59422BA95CD00AE1DCA /* SACurriculumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A217A59322BA95CD00AE1DCA /* SACurriculumViewController.m */; };
+		A217A59722BA9C1800AE1DCA /* SACurriculumTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A217A59622BA9C1800AE1DCA /* SACurriculumTitleCell.m */; };
+		A217A59A22BAA12B00AE1DCA /* SACurriculumNumberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A217A59922BAA12B00AE1DCA /* SACurriculumNumberCell.m */; };
+		A217A59D22BAA5DC00AE1DCA /* SACurriculumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A217A59C22BAA5DC00AE1DCA /* SACurriculumCell.m */; };
 		A2AC60D022B343E800247689 /* Notice.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2AC60CF22B343E800247689 /* Notice.plist */; };
 		A2AC60D522B347DD00247689 /* SANoticeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC60D422B347DD00247689 /* SANoticeModel.m */; };
 		A2AC60DA22B3864800247689 /* Search.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2AC60D922B3864800247689 /* Search.plist */; };
@@ -143,6 +147,14 @@
 		A215EBD022B0004B006AAB1C /* SASearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SASearchViewController.m; sourceTree = "<group>"; };
 		A215EBD522B00491006AAB1C /* SAHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAHomeViewController.h; sourceTree = "<group>"; };
 		A215EBD622B00491006AAB1C /* SAHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAHomeViewController.m; sourceTree = "<group>"; };
+		A217A59222BA95CD00AE1DCA /* SACurriculumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SACurriculumViewController.h; sourceTree = "<group>"; };
+		A217A59322BA95CD00AE1DCA /* SACurriculumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SACurriculumViewController.m; sourceTree = "<group>"; };
+		A217A59522BA9C1800AE1DCA /* SACurriculumTitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SACurriculumTitleCell.h; sourceTree = "<group>"; };
+		A217A59622BA9C1800AE1DCA /* SACurriculumTitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SACurriculumTitleCell.m; sourceTree = "<group>"; };
+		A217A59822BAA12B00AE1DCA /* SACurriculumNumberCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SACurriculumNumberCell.h; sourceTree = "<group>"; };
+		A217A59922BAA12B00AE1DCA /* SACurriculumNumberCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SACurriculumNumberCell.m; sourceTree = "<group>"; };
+		A217A59B22BAA5DC00AE1DCA /* SACurriculumCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SACurriculumCell.h; sourceTree = "<group>"; };
+		A217A59C22BAA5DC00AE1DCA /* SACurriculumCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SACurriculumCell.m; sourceTree = "<group>"; };
 		A2AC60CF22B343E800247689 /* Notice.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Notice.plist; sourceTree = "<group>"; };
 		A2AC60D322B347DD00247689 /* SANoticeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SANoticeModel.h; sourceTree = "<group>"; };
 		A2AC60D422B347DD00247689 /* SANoticeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SANoticeModel.m; sourceTree = "<group>"; };
@@ -326,6 +338,8 @@
 				A2AC610622B785F800247689 /* SAHomeWorkController.h */,
 				A2AC610722B785F800247689 /* SAHomeWorkController.m */,
 				A2AC610922B7860700247689 /* SAHomeWork.storyboard */,
+				A217A59222BA95CD00AE1DCA /* SACurriculumViewController.h */,
+				A217A59322BA95CD00AE1DCA /* SACurriculumViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -592,6 +606,12 @@
 				A20D386F22B4F6BA0090321D /* SALeaveRecordInfoSpecialCell.m */,
 				A2AC610022B77CBB00247689 /* SAContactListCell.h */,
 				A2AC610122B77CBB00247689 /* SAContactListCell.m */,
+				A217A59522BA9C1800AE1DCA /* SACurriculumTitleCell.h */,
+				A217A59622BA9C1800AE1DCA /* SACurriculumTitleCell.m */,
+				A217A59822BAA12B00AE1DCA /* SACurriculumNumberCell.h */,
+				A217A59922BAA12B00AE1DCA /* SACurriculumNumberCell.m */,
+				A217A59B22BAA5DC00AE1DCA /* SACurriculumCell.h */,
+				A217A59C22BAA5DC00AE1DCA /* SACurriculumCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -742,6 +762,7 @@
 				A215EBD722B00491006AAB1C /* SAHomeViewController.m in Sources */,
 				A20D385522B4A56A0090321D /* SASingleCourseResultCell.m in Sources */,
 				A2AC60EF22B3A31D00247689 /* SAScoreSearchViewController.m in Sources */,
+				A217A59D22BAA5DC00AE1DCA /* SACurriculumCell.m in Sources */,
 				A2AE505C22B2533D001DBEAA /* SANoticeCell.m in Sources */,
 				A2AC610822B785F800247689 /* SAHomeWorkController.m in Sources */,
 				A20D386422B4E68A0090321D /* SALeaveRecordCell.m in Sources */,
@@ -774,6 +795,7 @@
 				A2AE505622B24C79001DBEAA /* SABaseNoticeViewController.m in Sources */,
 				A2AE505922B24FD7001DBEAA /* SANoticeViewController.m in Sources */,
 				A20D386722B4F1B60090321D /* SALeaveRecordModel.m in Sources */,
+				A217A59422BA95CD00AE1DCA /* SACurriculumViewController.m in Sources */,
 				A20D385B22B4D07E0090321D /* SAExamInfoCell.m in Sources */,
 				A2AE4FC422AF9198001DBEAA /* SATabView.m in Sources */,
 				A2AE502122B22011001DBEAA /* SAMessageCell.m in Sources */,
@@ -788,6 +810,7 @@
 				A20D388A22B534450090321D /* SALeaveRecordInfoViewController.m in Sources */,
 				A2AC610222B77CBB00247689 /* SAContactListCell.m in Sources */,
 				A2AE4FEB22B0F8DF001DBEAA /* SAViewWithBottomButton.m in Sources */,
+				A217A59722BA9C1800AE1DCA /* SACurriculumTitleCell.m in Sources */,
 				A215EBCB22B00033006AAB1C /* SAMineViewController.m in Sources */,
 				A20D384322B491100090321D /* SASearchCell.m in Sources */,
 				A20D384F22B49DBB0090321D /* SASingleExamResultViewController.m in Sources */,
@@ -796,6 +819,7 @@
 				A20D386D22B4F6A50090321D /* SALeaveRecordInfoNormalCell.m in Sources */,
 				A2AE4FCB22AFA063001DBEAA /* UIView+SAExtension.m in Sources */,
 				A20D385E22B4D82D0090321D /* SAExamInfoModel.m in Sources */,
+				A217A59A22BAA12B00AE1DCA /* SACurriculumNumberCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@
 #import "SADayOffViewController.h"
 #import "SAContactListViewController.h"
 #import "SAHomeWorkController.h"
+#import "SACurriculumViewController.h"
 
 #define kTopViewHeight 262
 #define kMargin 10
@@ -122,7 +123,7 @@ typedef enum {
         }
             break;
         case SAHomeGridTypeCurriculum:
-            NSLog(@"curr");
+            [self.navigationController pushViewController:[SACurriculumViewController new] animated:YES];
             break;
         case SAHomeGridTypeContactList:
             [self.navigationController pushViewController:[SAContactListViewController new] animated:YES];
