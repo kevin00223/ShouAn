@@ -954,7 +954,6 @@
 			baseConfigurationReference = E993A96181A20CD49670007B /* Pods-ShouAn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CQ6UA9X9H9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -975,7 +974,6 @@
 			baseConfigurationReference = 3C36135E39BBBDB76EB28B27 /* Pods-ShouAn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CQ6UA9X9H9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
