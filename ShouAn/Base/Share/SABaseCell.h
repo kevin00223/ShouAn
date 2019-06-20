@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) UILabel *titleLabel;
 
+@property (nonatomic, strong) UILabel *subTitleLabel;
+
 - (void)initSubviews;
 
 @end

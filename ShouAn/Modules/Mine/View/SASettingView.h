@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void(^CellSelectedBlock)(void);
+typedef void(^CellSelectedBlock)(NSIndexPath *indexPath);
 
 @interface SASettingView : SAViewWithBottomButton
 

@@ -43,9 +43,22 @@
         strongSelf.view.window.rootViewController = loginNav;
     };
     
-    self.settingView.cellSelectedBlock = ^{
+    self.settingView.cellSelectedBlock = ^(NSIndexPath * _Nonnull indexPath) {
         __strong __typeof(self) strongSelf = weakSelf;
-        [strongSelf.navigationController pushViewController:[SAFeedbackViewController new] animated:YES];
+        switch (indexPath.row) {
+            case 0:
+                [strongSelf.navigationController pushViewController:[SAFeedbackViewController new] animated:YES];
+                break;
+            case 1:
+                [strongSelf clearFile];
+                [strongSelf.settingView.tableView reloadData];
+                break;
+            case 2:
+                NSLog(@"更新");
+                break;
+            default:
+                break;
+        }
     };
 }
 
@@ -56,6 +69,27 @@
         make.edges.equalTo(self.view);
     }];
 }
+
+#pragma mark - 私有方法
+
+/**
+ * 清理缓存
+ */
+- (void)clearFile {
+    NSString *cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+    NSArray *files = [[NSFileManager defaultManager] subpathsAtPath:cachePath];
+    for (NSString *p in files) {
+        NSError *error = nil;
+        //获取文件全路径
+        NSString *fileAbsolutePath = [cachePath stringByAppendingPathComponent:p];
+        
+        if ([[NSFileManager defaultManager] fileExistsAtPath:fileAbsolutePath]) {
+            [[NSFileManager defaultManager] removeItemAtPath:fileAbsolutePath error:&error];
+        }
+    }
+}
+
+#pragma mark - lazy loading
 
 - (SASettingView *)settingView {
     if (!_settingView) {

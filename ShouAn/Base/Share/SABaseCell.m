@@ -27,6 +27,7 @@
 - (void)initSubviews {
     [self.contentView addSubview:self.titleLabel];
     [self.contentView addSubview:self.sepratorLine];
+    [self.contentView addSubview:self.subTitleLabel];
 }
 
 - (void)layoutSubviews {
@@ -36,6 +37,12 @@
         make.centerY.equalTo(self.contentView);
         make.left.equalTo(self.contentView).offset(15);
         make.width.offset(100);
+    }];
+    
+    [self.subTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.contentView);
+        make.width.offset(100);
+        make.right.equalTo(self.contentView).offset(18);
     }];
     
     [self.sepratorLine mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -61,6 +68,15 @@
         _sepratorLine.backgroundColor = SAHexColor(0xDCDCDC);
     }
     return _sepratorLine;
+}
+
+- (UILabel *)subTitleLabel {
+    if (!_subTitleLabel) {
+        _subTitleLabel = [[UILabel alloc]init];
+        _subTitleLabel.font = [UIFont systemFontOfSize:15];
+        _subTitleLabel.textColor = SAHexColor(0x646464);
+    }
+    return _subTitleLabel;
 }
 
 
