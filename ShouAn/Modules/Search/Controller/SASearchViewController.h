@@ -7,11 +7,11 @@
 //
 
 #import "SABaseNoticeViewController.h"
-#import <UIKit/UIKit.h>
+#import "SABaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SASearchViewController : UIViewController
+@interface SASearchViewController : SABaseViewController
 
 @end
 

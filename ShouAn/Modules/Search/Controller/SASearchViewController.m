@@ -114,9 +114,10 @@ static NSString *searchCellID = @"searchCell";
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight-kTabBarHeight-kStatusBarAndNavigationBarHeight) style:UITableViewStylePlain];
         [_tableView registerClass:[SASearchCell class] forCellReuseIdentifier:searchCellID];
-        _tableView.scrollEnabled = NO;
+//        _tableView.scrollEnabled = NO;
+        _tableView.showsVerticalScrollIndicator = NO;
         _tableView.dataSource = self;
         _tableView.delegate = self;
         _tableView.tableFooterView = [UIView new];

@@ -57,6 +57,7 @@
 		A2AC610822B785F800247689 /* SAHomeWorkController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC610722B785F800247689 /* SAHomeWorkController.m */; };
 		A2AC610A22B7860700247689 /* SAHomeWork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AC610922B7860700247689 /* SAHomeWork.storyboard */; };
 		A2AC610C22B79C4700247689 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AC610B22B79C4700247689 /* Images.xcassets */; };
+		A2AC617422BB54EC00247689 /* SAUserSharedInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC617322BB54EC00247689 /* SAUserSharedInstance.m */; };
 		A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */; };
 		A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9422AF755D001DBEAA /* Assets.xcassets */; };
 		A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9622AF755D001DBEAA /* LaunchScreen.storyboard */; };
@@ -176,6 +177,8 @@
 		A2AC610722B785F800247689 /* SAHomeWorkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAHomeWorkController.m; sourceTree = "<group>"; };
 		A2AC610922B7860700247689 /* SAHomeWork.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SAHomeWork.storyboard; sourceTree = "<group>"; };
 		A2AC610B22B79C4700247689 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A2AC617222BB54EC00247689 /* SAUserSharedInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAUserSharedInstance.h; sourceTree = "<group>"; };
+		A2AC617322BB54EC00247689 /* SAUserSharedInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAUserSharedInstance.m; sourceTree = "<group>"; };
 		A2AE4F8822AF755D001DBEAA /* ShouAn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShouAn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AE4F8B22AF755D001DBEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -492,6 +495,8 @@
 			children = (
 				A2AE4F8B22AF755D001DBEAA /* AppDelegate.h */,
 				A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */,
+				A2AC617222BB54EC00247689 /* SAUserSharedInstance.h */,
+				A2AC617322BB54EC00247689 /* SAUserSharedInstance.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -805,6 +810,7 @@
 				A20D383A22B14F5F0090321D /* SASettingView.m in Sources */,
 				A2AE4FD222AFA32D001DBEAA /* SALoginChildViewController.m in Sources */,
 				A215EBCE22B00040006AAB1C /* SAMessageViewController.m in Sources */,
+				A2AC617422BB54EC00247689 /* SAUserSharedInstance.m in Sources */,
 				A2AC60D522B347DD00247689 /* SANoticeModel.m in Sources */,
 				A20D383122B136E80090321D /* SATextFieldCell.m in Sources */,
 				A20D388A22B534450090321D /* SALeaveRecordInfoViewController.m in Sources */,
