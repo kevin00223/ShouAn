@@ -34,7 +34,6 @@
 		A20D389122B68C600090321D /* SADayOffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D389022B68C600090321D /* SADayOffViewController.m */; };
 		A20D389322B68C710090321D /* SADayOff.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20D389222B68C710090321D /* SADayOff.storyboard */; };
 		A215EBB422AFE05A006AAB1C /* SAStudentInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */; };
-		A215EBB722AFE13B006AAB1C /* SAStudentInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBB622AFE13B006AAB1C /* SAStudentInfoView.m */; };
 		A215EBCB22B00033006AAB1C /* SAMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBCA22B00033006AAB1C /* SAMineViewController.m */; };
 		A215EBCE22B00040006AAB1C /* SAMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBCD22B00040006AAB1C /* SAMessageViewController.m */; };
 		A215EBD122B0004B006AAB1C /* SASearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A215EBD022B0004B006AAB1C /* SASearchViewController.m */; };
@@ -57,6 +56,7 @@
 		A2AC610A22B7860700247689 /* SAHomeWork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AC610922B7860700247689 /* SAHomeWork.storyboard */; };
 		A2AC610C22B79C4700247689 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AC610B22B79C4700247689 /* Images.xcassets */; };
 		A2AC617622BB74A000247689 /* SAChangePwd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AC617522BB74A000247689 /* SAChangePwd.storyboard */; };
+		A2AC617822BBA4C800247689 /* SAStudentInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AC617722BBA4C800247689 /* SAStudentInfo.storyboard */; };
 		A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */; };
 		A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9422AF755D001DBEAA /* Assets.xcassets */; };
 		A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9622AF755D001DBEAA /* LaunchScreen.storyboard */; };
@@ -135,8 +135,6 @@
 		A20D389222B68C710090321D /* SADayOff.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SADayOff.storyboard; sourceTree = "<group>"; };
 		A215EBB222AFE05A006AAB1C /* SAStudentInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoViewController.h; sourceTree = "<group>"; };
 		A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAStudentInfoViewController.m; sourceTree = "<group>"; };
-		A215EBB522AFE13B006AAB1C /* SAStudentInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAStudentInfoView.h; sourceTree = "<group>"; };
-		A215EBB622AFE13B006AAB1C /* SAStudentInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAStudentInfoView.m; sourceTree = "<group>"; };
 		A215EBC922B00033006AAB1C /* SAMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMineViewController.h; sourceTree = "<group>"; };
 		A215EBCA22B00033006AAB1C /* SAMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMineViewController.m; sourceTree = "<group>"; };
 		A215EBCC22B00040006AAB1C /* SAMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMessageViewController.h; sourceTree = "<group>"; };
@@ -175,6 +173,7 @@
 		A2AC610922B7860700247689 /* SAHomeWork.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SAHomeWork.storyboard; sourceTree = "<group>"; };
 		A2AC610B22B79C4700247689 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A2AC617522BB74A000247689 /* SAChangePwd.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SAChangePwd.storyboard; sourceTree = "<group>"; };
+		A2AC617722BBA4C800247689 /* SAStudentInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SAStudentInfo.storyboard; sourceTree = "<group>"; };
 		A2AE4F8822AF755D001DBEAA /* ShouAn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShouAn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AE4F8B22AF755D001DBEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -565,6 +564,7 @@
 				A2AE4FD722AFA3AA001DBEAA /* SARegisterChildViewController.m */,
 				A215EBB222AFE05A006AAB1C /* SAStudentInfoViewController.h */,
 				A215EBB322AFE05A006AAB1C /* SAStudentInfoViewController.m */,
+				A2AC617722BBA4C800247689 /* SAStudentInfo.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -576,8 +576,6 @@
 				A2AE4FC322AF9198001DBEAA /* SATabView.m */,
 				A2AE4FD922AFA457001DBEAA /* SAContentView.h */,
 				A2AE4FDA22AFA457001DBEAA /* SAContentView.m */,
-				A215EBB522AFE13B006AAB1C /* SAStudentInfoView.h */,
-				A215EBB622AFE13B006AAB1C /* SAStudentInfoView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -712,6 +710,7 @@
 			files = (
 				A2AC60D022B343E800247689 /* Notice.plist in Resources */,
 				A2AC610C22B79C4700247689 /* Images.xcassets in Resources */,
+				A2AC617822BBA4C800247689 /* SAStudentInfo.storyboard in Resources */,
 				A2AE502422B220FF001DBEAA /* Message.plist in Resources */,
 				A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */,
 				A2AC617622BB74A000247689 /* SAChangePwd.storyboard in Resources */,
@@ -787,7 +786,6 @@
 				A2AE502822B22279001DBEAA /* SAMessageModel.m in Sources */,
 				A20D384022B1582D0090321D /* SAFeedbackViewController.m in Sources */,
 				A20D385822B4D0430090321D /* SAExamInfoViewController.m in Sources */,
-				A215EBB722AFE13B006AAB1C /* SAStudentInfoView.m in Sources */,
 				A20D382B22B135530090321D /* SAChangePwdViewController.m in Sources */,
 				A2AE4FEF22B1E764001DBEAA /* SABaseCell.m in Sources */,
 				A20D384622B4914A0090321D /* SAScoreSearchCell.m in Sources */,

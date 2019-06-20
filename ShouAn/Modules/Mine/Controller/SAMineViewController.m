@@ -104,8 +104,11 @@ static NSString *mineCellID = @"mineCell";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     switch (indexPath.row) {
-        case 0:
-            [self.navigationController pushViewController:[SAStudentInfoViewController new] animated:YES];
+        case 0: {
+            UIStoryboard *board = [UIStoryboard storyboardWithName:@"SAStudentInfo" bundle:nil];
+            SAStudentInfoViewController *vc = [board instantiateViewControllerWithIdentifier:@"studentInfo"];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             break;
         case 1: {
             UIStoryboard *board = [UIStoryboard storyboardWithName:@"SAChangePwd" bundle:nil];
