@@ -107,8 +107,11 @@ static NSString *mineCellID = @"mineCell";
         case 0:
             [self.navigationController pushViewController:[SAStudentInfoViewController new] animated:YES];
             break;
-        case 1:
-            [self.navigationController pushViewController:[SAChangePwdViewController new] animated:YES];
+        case 1: {
+            UIStoryboard *board = [UIStoryboard storyboardWithName:@"SAChangePwd" bundle:nil];
+            SAChangePwdViewController *vc = [board instantiateViewControllerWithIdentifier:@"changePwd"];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             break;
         case 2:
             [self.navigationController pushViewController:[SAAboutUsViewController new] animated:YES];

@@ -21,20 +21,24 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    [self networkRequest];
     
+    self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
     SANavigationController *loginNav = [[SANavigationController alloc]initWithRootViewController:[[SALoginViewController alloc] init]];
     SATabBarController *tabBarVC = [[SATabBarController alloc]init];
-    NSString *studentNo = [[NSUserDefaults standardUserDefaults] objectForKey:@"studentNo"];
-    if (studentNo.length > 0) {
-        self.window.rootViewController = tabBarVC;
-    }else{
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *studentNo = [userDefaults objectForKey:@"studentNo"];
+    if (studentNo.length == 0) {
+        [userDefaults setObject:@"160601" forKey:@"studentNo"];
+        [userDefaults setObject:@"123123" forKey:@"password"];
+        
         self.window.rootViewController = loginNav;
+    }else{
+        self.window.rootViewController = tabBarVC;
     }
     
     [self.window makeKeyAndVisible];
-    
-    [self networkRequest];
     
     return YES;
 }

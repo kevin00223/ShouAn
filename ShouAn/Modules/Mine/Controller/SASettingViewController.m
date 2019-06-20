@@ -41,10 +41,10 @@
         __strong __typeof(self) strongSelf = weakSelf;
         SANavigationController *loginNav = [[SANavigationController alloc]initWithRootViewController:[[SALoginViewController alloc] init]];
         strongSelf.view.window.rootViewController = loginNav;
-        
-        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-        [userDefaults removeObjectForKey:@"studentNo"];
-        [userDefaults removeObjectForKey:@"password"];
+//
+//        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+//        [userDefaults removeObjectForKey:@"studentNo"];
+//        [userDefaults removeObjectForKey:@"password"];
     };
     
     self.settingView.cellSelectedBlock = ^(NSIndexPath * _Nonnull indexPath) {

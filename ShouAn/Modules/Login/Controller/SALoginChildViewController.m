@@ -80,21 +80,22 @@
 
 - (void)loginButtonClicked: (UIButton *)loginButton {
     
-    if ([self.studentNoTextField.text isEqualToString:@"160601"] && [self.pwdTextField.text isEqualToString:@"123123"]) {
-        
-        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-        [userDefaults setObject:@"160601" forKey:@"studentNo"];
-        [userDefaults setObject:@"123123" forKey:@"password"];
-        
-        SATabBarController *tabBarVC = [[SATabBarController alloc]init];
-        [UIApplication sharedApplication].delegate.window.rootViewController = tabBarVC;
-    }else{
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"信息有误, 请检查后重新输入" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *action = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleCancel handler:nil];
-        [alert addAction:action];
-        [self presentViewController:alert animated:YES completion:nil];
-    }
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *studentNo = [userDefaults objectForKey:@"studentNo"];
+    NSString *pwd = [userDefaults objectForKey:@"password"];
     
+    if (studentNo.length > 0 && pwd.length > 0) {
+        if ([self.studentNoTextField.text isEqualToString:studentNo] && [self.pwdTextField.text isEqualToString:pwd]) {
+            
+            SATabBarController *tabBarVC = [[SATabBarController alloc]init];
+            [UIApplication sharedApplication].delegate.window.rootViewController = tabBarVC;
+        }else{
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"信息有误, 请检查后重新输入" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *action = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleCancel handler:nil];
+            [alert addAction:action];
+            [self presentViewController:alert animated:YES completion:nil];
+        }
+    }
 }
 
 #pragma mark - lazy loading

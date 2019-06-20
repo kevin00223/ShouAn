@@ -58,6 +58,7 @@
 		A2AC610A22B7860700247689 /* SAHomeWork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AC610922B7860700247689 /* SAHomeWork.storyboard */; };
 		A2AC610C22B79C4700247689 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AC610B22B79C4700247689 /* Images.xcassets */; };
 		A2AC617422BB54EC00247689 /* SAUserSharedInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC617322BB54EC00247689 /* SAUserSharedInstance.m */; };
+		A2AC617622BB74A000247689 /* SAChangePwd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AC617522BB74A000247689 /* SAChangePwd.storyboard */; };
 		A2AE4F8D22AF755D001DBEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */; };
 		A2AE4F9522AF755D001DBEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9422AF755D001DBEAA /* Assets.xcassets */; };
 		A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AE4F9622AF755D001DBEAA /* LaunchScreen.storyboard */; };
@@ -179,6 +180,7 @@
 		A2AC610B22B79C4700247689 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A2AC617222BB54EC00247689 /* SAUserSharedInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAUserSharedInstance.h; sourceTree = "<group>"; };
 		A2AC617322BB54EC00247689 /* SAUserSharedInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAUserSharedInstance.m; sourceTree = "<group>"; };
+		A2AC617522BB74A000247689 /* SAChangePwd.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SAChangePwd.storyboard; sourceTree = "<group>"; };
 		A2AE4F8822AF755D001DBEAA /* ShouAn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShouAn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AE4F8B22AF755D001DBEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2AE4F8C22AF755D001DBEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 				A20D383622B14F130090321D /* SASettingViewController.m */,
 				A20D383E22B1582D0090321D /* SAFeedbackViewController.h */,
 				A20D383F22B1582D0090321D /* SAFeedbackViewController.m */,
+				A2AC617522BB74A000247689 /* SAChangePwd.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -721,6 +724,7 @@
 				A2AC610C22B79C4700247689 /* Images.xcassets in Resources */,
 				A2AE502422B220FF001DBEAA /* Message.plist in Resources */,
 				A2AE4F9822AF755D001DBEAA /* LaunchScreen.storyboard in Resources */,
+				A2AC617622BB74A000247689 /* SAChangePwd.storyboard in Resources */,
 				A2AC60FC22B7793900247689 /* ContactList.plist in Resources */,
 				A2AC610A22B7860700247689 /* SAHomeWork.storyboard in Resources */,
 				A2AC60DA22B3864800247689 /* Search.plist in Resources */,
