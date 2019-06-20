@@ -90,7 +90,10 @@ static NSString *searchCellID = @"searchCell";
     
     switch (indexPath.row) {
         case 0: {
-            NSLog(@"考勤");
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"敬请期待" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+            [alert addAction:action];
+            [self presentViewController:alert animated:YES completion:nil];
         }
             break;
         case 1:
