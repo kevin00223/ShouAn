@@ -99,9 +99,20 @@
 #pragma mark - private method
 
 - (void)registerButtonClicked: (UIButton *)registerButton {
-    SAStudentInfoViewController *studentInfoViewController = [[SAStudentInfoViewController alloc]init];
-    
-    [[self parentViewController].navigationController pushViewController:studentInfoViewController animated:YES];
+
+    if (self.studentNoTextField.text.length > 0 && self.pwdTextField.text.length > 0 && self.pwdConfirmTextField.text.length > 0) {
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"学号错误, 请检查后输入" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleCancel handler:nil];
+        [alert addAction:action];
+        [self presentViewController:alert animated:YES completion:nil];
+    }else{
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"信息不全, 请检查后输入" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleCancel handler:nil];
+        [alert addAction:action];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
 }
 
 #pragma mark - lazy loading
