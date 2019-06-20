@@ -53,8 +53,12 @@
                 [strongSelf clearFile];
                 [strongSelf.settingView.tableView reloadData];
                 break;
-            case 2:
-                NSLog(@"更新");
+            case 2: {
+                UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"已经是最新版本" preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction *action = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleCancel handler:nil];
+                [alert addAction:action];
+                [strongSelf presentViewController:alert animated:YES completion:nil];
+            }
                 break;
             default:
                 break;
