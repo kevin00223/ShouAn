@@ -9,6 +9,8 @@
 #import "SASettingViewController.h"
 #import "SASettingView.h"
 #import "SAFeedbackViewController.h"
+#import "SANavigationController.h"
+#import "SALoginViewController.h"
 
 @interface SASettingViewController ()
 
@@ -32,11 +34,15 @@
 - (void)initSubviews {
     [self.view addSubview:self.settingView];
     
-    self.settingView.confirmButtonClickedBlock = ^{
-        NSLog(@"点击了确认");
-    };
+    self.settingView.bottomButtonTitle = @"退出登录";
     
     __weak __typeof(self) weakSelf  = self;
+    self.settingView.confirmButtonClickedBlock = ^{
+        __strong __typeof(self) strongSelf = weakSelf;
+        SANavigationController *loginNav = [[SANavigationController alloc]initWithRootViewController:[[SALoginViewController alloc] init]];
+        strongSelf.view.window.rootViewController = loginNav;
+    };
+    
     self.settingView.cellSelectedBlock = ^{
         __strong __typeof(self) strongSelf = weakSelf;
         [strongSelf.navigationController pushViewController:[SAFeedbackViewController new] animated:YES];

@@ -52,6 +52,11 @@
     _dataSource = dataSource;
 }
 
+- (void)setBottomButtonTitle:(NSString *)bottomButtonTitle {
+    _bottomButtonTitle = bottomButtonTitle;
+    [self.confirmButton setTitle:_bottomButtonTitle forState:UIControlStateNormal];
+}
+
 #pragma mark - private method
 
 - (void)confirmButtonClicked: (UIButton *)confirmButton {

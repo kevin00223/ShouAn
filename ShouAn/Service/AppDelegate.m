@@ -27,7 +27,18 @@
     self.window.rootViewController = tabBarVC;
     [self.window makeKeyAndVisible];
     
+    [self networkRequest];
+    
     return YES;
+}
+
+- (void)networkRequest {
+    
+    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com/"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
+     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request];
+    [dataTask resume];
 }
 
 

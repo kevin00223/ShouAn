@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSArray *dataSource;
 
+@property (nonatomic, strong) NSString *bottomButtonTitle;
+
 @end
 
 NS_ASSUME_NONNULL_END
