@@ -951,7 +951,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQ6UA9X9H9;
+				DEVELOPMENT_TEAM = X9WP29JJW7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/likai/ShouAn/ShouAn/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = ShouAn/Info.plist;
@@ -959,9 +959,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-223LK.ShouAn";
+				PRODUCT_BUNDLE_IDENTIFIER = "-223LK.First.ShouAn";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -971,7 +971,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQ6UA9X9H9;
+				DEVELOPMENT_TEAM = X9WP29JJW7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/likai/ShouAn/ShouAn/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = ShouAn/Info.plist;
@@ -979,9 +979,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-223LK.ShouAn";
+				PRODUCT_BUNDLE_IDENTIFIER = "-223LK.First.ShouAn";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
